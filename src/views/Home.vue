@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div id="Line"></div>
-    <h1 id="Header">Välkomna</h1>
+    <h1 id="Header"><b>Välkomna</b></h1>
   </div>
 </template>
 <script>
@@ -19,5 +18,13 @@ export default {};
 #Header {
   margin-top: 18.5vh;
   margin-right: 17vw;
+}
+@media only screen and (max-device-width: 631px) {
+  #line {
+  }
+  #Header {
+  }
+  body {
+  }
 }
 </style>

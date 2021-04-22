@@ -1,57 +1,63 @@
-<template>
+<template id="yes">
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Oskarshamns MKF</router-link>
-      <router-link to="/about">Om oss</router-link>
-      <router-link to="/Contact">Kontakta oss</router-link>
-    </div>
+    <Navbar id="DesktopNav" />
+    <Mnavbar id="MobileNav" />
     <router-view />
     <img id="logga" src="./assets/Mark.png" alt="" />
   </div>
 </template>
-
+<script>
+import Navbar from "@/components/Navbar.vue";
+import Mnavbar from "@/components/Mnavbar.vue";
+export default {
+  name: "app",
+  components: {
+    Navbar,
+    Mnavbar,
+  },
+};
+</script>
 <style>
+#MobileNav {
+  display: none;
+}
 #app {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #3b7094;
 }
 
-#nav {
-  padding: 30px;
-  background: linear-gradient(#000000, #b1b1b100);
-}
-
-#nav a {
-  font-weight: bold;
-  color: #ffffff;
-  margin-right: 1vw;
-  padding: 10px;
-  -webkit-transition: 1s;
-}
-
-#nav a:hover {
-  box-shadow: 0px 0px 10px 5px #ccc;
-  border-radius: 25px;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 body {
   background-image: url("~@/assets/Mwall.png");
   background-repeat: no-repeat;
-  background-position: 0vmax;
-  background-size: cover;
+  background-position: center;
 }
 #logga {
   width: 120px;
   position: absolute;
   left: 2%;
   top: 0%;
+}
+@media only screen and (min-device-width: 1280px) {
+  body {
+    background-size: cover;
+  }
+}
+@media only screen and (max-device-width: 631px) {
+  #DesktopNav {
+    display: none;
+  }
+  #MobileNav {
+    display: block;
+    position: fixed;
+    left: 80%;
+    top: 0%;
+  }
+  #logga {
+    position: absolute;
+    top: -3%;
+  }
 }
 </style>

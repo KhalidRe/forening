@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="Line"></div>
-    <h1 id="Header">About</h1>
+    <h1 id="Header">Contact</h1>
   </div>
 </template>
 <script>
