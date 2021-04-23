@@ -32,12 +32,12 @@ h1 {
 }
 
 body {
-  background-image: url("~@/assets/CloudY.jpg");
-  background-repeat: no-repeat;
-  background-position-y: -17.6vh;
-  background-position: fixed;
-  position: absolute;
-  width: 100%;
+  background-image: url("~@/assets/CloudY.jpg"),
+    linear-gradient(rgba(109, 179, 242, 0.6), rgba(109, 179, 242, 0.6));
+
+  background-size: cover, contain;
+  background-position: center, right bottom;
+  background-repeat: no-repeat, repeat;
 }
 #logga {
   width: 120px;
