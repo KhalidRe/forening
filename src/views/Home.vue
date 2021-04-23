@@ -1,30 +1,121 @@
 <template>
   <div>
-    <h1 id="Header"><b>Välkomna</b></h1>
+    <div>
+      <p id="gText">- Oskarshamns Mångkulturella Förening</p>
+    </div>
+
+    <h1 id="Header">
+      <b
+        >Välkommen till en gemenskap <br />
+        Som skapar Ro och Frid.</b
+      >
+    </h1>
+    <div id="Bcollection">
+      <Enavbar id="Enav" />
+    </div>
+    <div class="S">
+      <div class="BgOpac set">
+        <div class="DownArrows bounce-1"></div>
+      </div>
+    </div>
+
+    <div id="LowSection"></div>
   </div>
 </template>
 <script>
-export default {};
+import Enavbar from "@/components/Enavbar.vue";
+export default {
+  components: {
+    Enavbar,
+  },
+  methods: {},
+};
 </script>
 <style scoped>
-#Line {
-  background-color: green;
-  width: 100px;
-  height: 5px;
+.S .BgOpac {
+  -webkit-transition: 1s;
+}
+.S div.BgOpac:hover {
+  box-shadow: 0px 0px 50px 1px rgb(90, 142, 255);
+}
+#gText {
+  color: #ffc02c;
+  top: 30%;
+  left: 28%;
   position: absolute;
-  margin-top: 3vh;
-  margin-left: 30vw;
+  font-size: 23px;
+  font-weight: 600;
 }
 #Header {
-  margin-top: 18.5vh;
-  margin-right: 17vw;
+  font-size: 70px;
+  position: absolute;
+  left: 28%;
+  top: 35%;
+  text-align: left;
+}
+#Enav {
+  margin-top: 50vh;
+}
+.BgOpac {
+  background-image: url("~@/assets/Opac.png");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  width: 100px;
+  height: 66px;
+  position: absolute;
+  left: 45.3vw;
+  top: 82vh;
+  border-radius: 30px;
+}
+.BgOpac div:hover {
+}
+.DownArrows {
+  background-image: url("~@/assets/Arrows.png");
+  background-repeat: no-repeat;
+  background-size: 65px;
+  background-position-x: 18px;
+  background-position-y: 5px;
+  width: 100px;
+  height: 70px;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(4.25px);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(8.5px);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translateY(12.75px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(17px);
+    opacity: 0;
+  }
+}
+#LowSection {
+  background-color: #0b1d26;
+  width: 99vw;
+  height: 500vh;
+  margin-top: 120vh;
+  position: absolute;
 }
 @media only screen and (max-device-width: 631px) {
   #line {
-  }
-  #Header {
-  }
-  body {
   }
 }
 </style>

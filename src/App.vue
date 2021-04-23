@@ -18,21 +18,23 @@ export default {
 };
 </script>
 <style>
+h1 {
+}
 #MobileNav {
   display: none;
 }
 #app {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: Chronicle Display;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #3b7094;
+  color: #ffffff;
 }
 
 body {
-  background-image: url("~@/assets/Mwall.png");
+  background-image: url("~@/assets/CloudY.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-y: -167px;
 }
 #logga {
   width: 120px;

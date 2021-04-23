@@ -1,9 +1,8 @@
 <template>
   <div>
     <div id="nav">
-      <router-link to="/">Oskarshamns MKF</router-link>
-      <router-link to="/about">Om oss</router-link>
-      <router-link to="/contact">Kontakta oss</router-link>
+      <router-link id="start" to="/">Start Sida</router-link>
+      <router-link id="kontakt" to="/contact">Kontakta oss</router-link>
     </div>
   </div>
 </template>
@@ -23,6 +22,7 @@ export default {
   margin-right: 1vw;
   padding: 10px;
   -webkit-transition: 1s;
+  font-size: 18px;
 }
 #nav a:hover {
   box-shadow: 0px 0px 10px 5px #ccc;
@@ -32,5 +32,13 @@ export default {
 }
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+#start {
+  position: absolute;
+  left: 3%;
+  top: 12%;
+}
+#kontakt {
+  float: right;
 }
 </style>

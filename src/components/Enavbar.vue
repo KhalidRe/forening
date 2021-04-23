@@ -1,0 +1,39 @@
+<template>
+  <div>
+    <div id="nav">
+      <router-link id="start" to="/">Föreläsningar</router-link>
+      <router-link id="kontakt" to="/contact">Evenemang</router-link>
+      <router-link id="kontakt" to="/contact">Höjdpunkter</router-link>
+      <router-link id="kontakt" to="/contact">Bönetider</router-link>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  name: "Navbar",
+};
+</script>
+<style scoped>
+#nav {
+  padding: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#nav a {
+  color: #000000;
+  margin-right: 2vw;
+  padding: 10px;
+  background-color: rgb(231, 231, 231);
+  border-radius: 5px;
+  font-weight: 550;
+  -webkit-transition: 1s;
+}
+#nav a:hover {
+  box-shadow: 0px 0px 10px 5px #ccc;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 20px;
+}
+#nav a.router-link-exact-active {
+}
+</style>
