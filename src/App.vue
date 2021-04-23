@@ -35,7 +35,9 @@ body {
   background-image: url("~@/assets/CloudY.jpg");
   background-repeat: no-repeat;
   background-position-y: -17.6vh;
-  width: 100vw;
+  background-position: fixed;
+  position: absolute;
+  width: 100%;
 }
 #logga {
   width: 120px;
