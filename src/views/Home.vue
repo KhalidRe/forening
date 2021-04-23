@@ -108,10 +108,10 @@ export default {
   }
 }
 #LowSection {
-  background-color: #0b1d26;
+  background: linear-gradient(#0b1d2600 2%, #0b1d26 10%);
   width: 99vw;
   height: 500vh;
-  margin-top: 120vh;
+  margin-top: 60vh;
   position: absolute;
 }
 @media only screen and (max-device-width: 631px) {
