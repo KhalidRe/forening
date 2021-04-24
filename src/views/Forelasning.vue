@@ -8,7 +8,7 @@
       <b>Föreläsningar</b>
     </h1>
     <div id="Bcollection">
-      <Enavbar id="Enav" />
+      <Enavbar class="Enav up" />
     </div>
     <div class="S">
       <div class="BgOpac set">
@@ -52,9 +52,10 @@ body {
   top: 35%;
   text-align: left;
 }
-#Enav {
+.Enav {
   margin-top: 0vh;
-  -webkit-transition: 1s;
+  animation: move 1500ms ease-in-out;
+  animation-iteration-count: 1;
 }
 .BgOpac {
   background-image: url("~@/assets/Opac.png");
@@ -67,8 +68,7 @@ body {
   top: 82vh;
   border-radius: 30px;
 }
-.BgOpac div:hover {
-}
+
 .DownArrows {
   background-image: url("~@/assets/Arrows.png");
   background-repeat: no-repeat;
@@ -84,6 +84,9 @@ body {
 .bounce-1 {
   animation-name: bounce-1;
   animation-timing-function: linear;
+}
+.up {
+  animation-name: up;
 }
 @keyframes bounce-1 {
   0% {
@@ -105,6 +108,15 @@ body {
   100% {
     transform: translateY(17px);
     opacity: 0;
+  }
+}
+@keyframes up {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 #LowSection {

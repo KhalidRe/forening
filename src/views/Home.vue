@@ -58,8 +58,7 @@ export default {
   animation: move 1500ms ease-in-out;
   animation-iteration-count: 1;
 }
-.Enav .down {
-}
+
 .BgOpac {
   background-image: url("~@/assets/Opac.png");
   background-repeat: no-repeat;
@@ -92,6 +91,7 @@ export default {
 .down {
   animation-name: down;
 }
+
 @keyframes bounce-1 {
   0% {
     transform: translateY(0);
@@ -126,6 +126,7 @@ export default {
     transform: translateY(0vh);
   }
 }
+
 #LowSection {
   width: 2vw;
   height: 2vh;
