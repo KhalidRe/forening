@@ -1,9 +1,9 @@
 <template id="yes">
   <div id="app">
     <Navbar id="DesktopNav" />
-    <Mnavbar id="MobileNav" />
     <router-view />
     <img id="logga" src="./assets/Mark.png" alt="" />
+    <Mnavbar id="MobileNav" />
   </div>
 </template>
 <script>
@@ -39,13 +39,13 @@ body {
   background-repeat: no-repeat, no-repeat, repeat;
   background-position: right bottom, top;
   background-position-y: 150vh, 0, 130vh;*/
-  background: linear-gradient(to bottom, transparent, #0b1d26),
+  background: linear-gradient(to bottom, transparent 70%, #0b1d26 100%),
     url("~@/assets/CloudY.jpg"),
     -webkit-linear-gradient(#0b1d26 0%, #0b1d26 100%);
   height: 100vmax;
   background-repeat: no-repeat, no-repeat, repeat;
   background-position: right bottom, top;
-  background-position-y: 0, 0, 130vh;
+  background-position-y: -17vh, -17vh, 130vh;
 }
 #logga {
   width: 120px;
@@ -53,19 +53,22 @@ body {
   left: 2%;
   top: 0%;
 }
-@media only screen and (min-device-width: 1280px) {
+@media only screen and (min-device-width: 700px) {
   body {
     background-size: cover;
   }
 }
-@media only screen and (max-device-width: 631px) {
+@media only screen and (max-device-width: 700px) {
+  body {
+    background-size: cover;
+  }
   #DesktopNav {
     display: none;
   }
   #MobileNav {
     display: block;
     position: fixed;
-    left: 80%;
+    margin-left: 80vw;
     top: 0%;
   }
   #logga {

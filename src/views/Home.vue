@@ -43,11 +43,11 @@ export default {
   top: 30%;
   left: 28%;
   position: absolute;
-  font-size: 23px;
+  font-size: 1.4vw;
   font-weight: 600;
 }
 #Header {
-  font-size: 70px;
+  font-size: 3.5vw;
   position: absolute;
   left: 28%;
   top: 35%;
@@ -114,7 +114,5 @@ export default {
   position: absolute;
 }
 @media only screen and (max-device-width: 631px) {
-  #line {
-  }
 }
 </style>

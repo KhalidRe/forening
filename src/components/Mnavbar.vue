@@ -24,8 +24,6 @@ export default {
   components: {
     "tasty-burger-button": TastyBurgerButton,
   },
-  methods: {},
-  mounted: {},
 
   data() {
     return {
