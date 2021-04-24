@@ -32,12 +32,13 @@ h1 {
 }
 
 body {
-  background-image: url("~@/assets/CloudY.jpg"),
-    linear-gradient(rgba(109, 179, 242, 0.6), rgba(109, 179, 242, 0.6));
-
-  background-size: cover, contain;
-  background-position: center, right bottom;
-  background-repeat: no-repeat, repeat;
+  /*background-image: url("~@/assets/CloudY.jpg");*/
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 1) 100%),
+    url("~@/assets/CloudY.jpg"),
+    -webkit-linear-gradient(rgb(0, 0, 0) 0%, rgb(0, 0, 1) 100%);
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-position: right bottom, top;
+  background-position-y: 130vh, 0, 130vh;
 }
 #logga {
   width: 120px;
