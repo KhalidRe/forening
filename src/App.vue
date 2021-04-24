@@ -33,7 +33,7 @@ h1 {
 
 body {
   /*background-image: url("~@/assets/CloudY.jpg");*/
-  background: -webkit-linear-gradient(#0b1d26 0%, rgb(11, 30, 40) 70%),
+  background: -webkit-linear-gradient(#0b1d2600 0%, #0b1d26 70%),
     url("~@/assets/CloudY.jpg"),
     -webkit-linear-gradient(#0b1d26 0%, #0b1d26 100%);
   background-repeat: no-repeat, no-repeat, repeat;
