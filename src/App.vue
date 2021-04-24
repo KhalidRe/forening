@@ -33,12 +33,12 @@ h1 {
 
 body {
   /*background-image: url("~@/assets/CloudY.jpg");*/
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 1) 100%),
+  background: -webkit-linear-gradient(#0b1d26 0%, rgb(11, 30, 40) 70%),
     url("~@/assets/CloudY.jpg"),
-    -webkit-linear-gradient(rgb(0, 0, 0) 0%, rgb(0, 0, 1) 100%);
+    -webkit-linear-gradient(#0b1d26 0%, #0b1d26 100%);
   background-repeat: no-repeat, no-repeat, repeat;
   background-position: right bottom, top;
-  background-position-y: 130vh, 0, 130vh;
+  background-position-y: 150vh, 0, 130vh;
 }
 #logga {
   width: 120px;
