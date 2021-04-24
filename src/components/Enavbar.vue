@@ -1,10 +1,10 @@
 <template>
   <div>
     <div id="nav">
-      <router-link id="start" to="/">Föreläsningar</router-link>
-      <router-link id="kontakt" to="/contact">Evenemang</router-link>
-      <router-link id="kontakt" to="/contact">Höjdpunkter</router-link>
-      <router-link id="kontakt" to="/contact">Bönetider</router-link>
+      <router-link id="start" to="/forelasning">Föreläsningar</router-link>
+      <router-link id="Evenemang" to="/event">Evenemang</router-link>
+      <router-link id="Highlights" to="/highlight">Höjdpunkter</router-link>
+      <router-link id="Btider" to="/salat">Bönetider</router-link>
     </div>
   </div>
 </template>
