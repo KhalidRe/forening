@@ -30,7 +30,6 @@ h1 {
   text-align: center;
   color: #ffffff;
 }
-
 body {
   /*background-image: url("~@/assets/CloudY.jpg");*/
   /*background: -webkit-linear-gradient(#0b1d2600 0%, #0b1d26 70%),

@@ -29,6 +29,8 @@ export default {
 };
 </script>
 <style scoped>
+body {
+}
 .S .BgOpac {
   -webkit-transition: 1s;
 }
@@ -51,7 +53,8 @@ export default {
   text-align: left;
 }
 #Enav {
-  margin-top: 50vh;
+  margin-top: 0vh;
+  -webkit-transition: 1s;
 }
 .BgOpac {
   background-image: url("~@/assets/Opac.png");

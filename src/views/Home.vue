@@ -11,7 +11,7 @@
       >
     </h1>
     <div id="Bcollection">
-      <Enavbar id="Enav" />
+      <Enavbar class="Enav down" />
     </div>
     <div class="S">
       <div class="BgOpac set">
@@ -53,8 +53,12 @@ export default {
   top: 35%;
   text-align: left;
 }
-#Enav {
+.Enav {
   margin-top: 50vh;
+  animation: move 1500ms ease-in-out;
+  animation-iteration-count: 1;
+}
+.Enav .down {
 }
 .BgOpac {
   background-image: url("~@/assets/Opac.png");
@@ -85,6 +89,9 @@ export default {
   animation-name: bounce-1;
   animation-timing-function: linear;
 }
+.down {
+  animation-name: down;
+}
 @keyframes bounce-1 {
   0% {
     transform: translateY(0);
@@ -105,6 +112,18 @@ export default {
   100% {
     transform: translateY(17px);
     opacity: 0;
+  }
+}
+@keyframes down {
+  0% {
+    transform: translateY(-50vh);
+  }
+
+  95% {
+    transform: translateY(2vh);
+  }
+  100% {
+    transform: translateY(0vh);
   }
 }
 #LowSection {
