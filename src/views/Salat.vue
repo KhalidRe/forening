@@ -1,15 +1,19 @@
 <template>
   <div>
     <div>
-      <p id="gText">- Oskarshamns Mångkulturella Förening</p>
+      <p id="gText">
+        - Oskarshamns Mångkulturella Förening
+      </p>
     </div>
 
     <h1 id="Header">
-      <b>Föreläsningar</b>
+      <b>Bönetider</b>
     </h1>
+
     <div id="Bcollection">
       <Enavbar class="Enav up" />
     </div>
+    <Ptime />
     <div class="S">
       <div class="BgOpac set">
         <div class="DownArrows bounce-1"></div>
@@ -21,16 +25,18 @@
 </template>
 <script>
 import Enavbar from "@/components/Enavbar.vue";
+import Ptime from "@/components/Ptime.vue";
 export default {
   components: {
     Enavbar,
+    Ptime,
   },
-  methods: {},
+  data() {
+    return {};
+  },
 };
 </script>
 <style>
-body {
-}
 .S .BgOpac {
   -webkit-transition: 1s;
 }
