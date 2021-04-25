@@ -1,15 +1,18 @@
 <template>
   <div>
-    <div>
-      <p id="gText">- Oskarshamns Mångkulturella Förening</p>
+    <div class="Fin">
+      <div>
+        <p id="gText">- Oskarshamns Mångkulturella Förening</p>
+      </div>
+
+      <h1 id="Header">
+        <b
+          >Välkommen till en gemenskap <br />
+          Som skapar Ro och Frid.</b
+        >
+      </h1>
     </div>
 
-    <h1 id="Header">
-      <b
-        >Välkommen till en gemenskap <br />
-        Som skapar Ro och Frid.</b
-      >
-    </h1>
     <div id="Bcollection">
       <Enavbar class="Enav down" />
     </div>
@@ -70,8 +73,7 @@ export default {
   top: 82vh;
   border-radius: 30px;
 }
-.BgOpac div:hover {
-}
+
 .DownArrows {
   background-image: url("~@/assets/Arrows.png");
   background-repeat: no-repeat;
@@ -134,5 +136,29 @@ export default {
   position: absolute;
 }
 @media only screen and (max-device-width: 631px) {
+}
+.fade-leave,
+.fade-enter {
+  transition: opacity 0.5s;
+}
+.fade-leave,
+.fade-enter-to {
+  opacity: 1;
+}
+.Fin {
+  -webkit-animation: fadein 2.5s;
+
+  animation: fadein 2.5s;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>
