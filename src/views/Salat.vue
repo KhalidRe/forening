@@ -5,7 +5,6 @@
         - Oskarshamns Mångkulturella Förening
       </p>
     </div>
-
     <h1 id="Header">
       <b>Bönetider</b>
     </h1>
@@ -13,7 +12,7 @@
     <div id="Bcollection">
       <Enavbar class="Enav up" />
     </div>
-    <Ptime />
+    <Ptime id="Ppos" />
     <div class="S">
       <div class="BgOpac set">
         <div class="DownArrows bounce-1"></div>
@@ -37,6 +36,11 @@ export default {
 };
 </script>
 <style>
+#Ppos {
+  position: absolute;
+  left: 23%;
+  margin-top: 14%;
+}
 .S .BgOpac {
   -webkit-transition: 1s;
 }
