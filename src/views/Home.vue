@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="hbg">
     <div class="Fin">
       <div>
         <p id="gText">- Oskarshamns Mångkulturella Förening</p>

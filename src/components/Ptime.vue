@@ -1,20 +1,14 @@
 <template>
-  <div>
-    <div id="Ptime">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+  <div id="Ptime">
+    <div>
+      <p>{{ this.fajir }}</p>
+      <p>{{ this.maghreb }}</p>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: {
-    
-  },
+  name: "Ptime",
   data() {
     return {
       day: null,
@@ -60,4 +54,8 @@ export default {
   },
 };
 </script>
-<style></style>
+<style scoped>
+p {
+  font-size: 50px;
+}
+</style>

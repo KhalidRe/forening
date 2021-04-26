@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="bgs">
     <div>
       <p id="gText">
         - Oskarshamns Mångkulturella Förening
@@ -13,7 +13,7 @@
     <div id="Bcollection">
       <Enavbar class="Enav up" />
     </div>
-    <Ptime />
+    <Ptime id="pray" />
     <div class="S">
       <div class="BgOpac set">
         <div class="DownArrows bounce-1"></div>
@@ -36,7 +36,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .S .BgOpac {
   -webkit-transition: 1s;
 }

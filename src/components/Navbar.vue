@@ -39,6 +39,7 @@ export default {
   top: 12%;
 }
 #kontakt {
-  float: right;
+  right: 3%;
+  position: absolute;
 }
 </style>
