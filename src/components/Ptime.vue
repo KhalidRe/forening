@@ -2,7 +2,7 @@
   <div id="Ptime">
     <div id="Cbg">
       <div id="container">
-        <div class="Ton" v-if="this.ok > this.eshaT">
+        <div class="Ton" v-if="this.ok > this.eshaT && this.ok < this.fajirT">
           <p>Fajr</p>
           <p>{{ this.fajir }}</p>
         </div>
@@ -10,7 +10,7 @@
           <p>Fajr</p>
           <p>{{ this.fajir }}</p>
         </div>
-        <div class="Ton" v-if="this.ok > this.fajirT">
+        <div class="Ton" v-if="this.ok > this.fajirT && this.ok < this.duhrT">
           <p>Zuhr</p>
           <p>{{ this.duhr }}</p>
         </div>
@@ -18,7 +18,7 @@
           <p>Zuhr</p>
           <p>{{ this.duhr }}</p>
         </div>
-        <div class="Ton" v-if="this.ok > this.duhrT">
+        <div class="Ton" v-if="this.ok > this.duhrT && this.ok < this.aserT">
           <p>Asr</p>
           <p>{{ this.aser }}</p>
         </div>
@@ -26,15 +26,15 @@
           <p>Asr</p>
           <p>{{ this.aser }}</p>
         </div>
-        <div class="Ton" v-if="this.ok > this.aserT">
-          <p>maghreb</p>
+        <div class="Ton" v-if="this.ok > this.aserT && this.ok < this.maghrebT">
+          <p>Maghreb</p>
           <p>{{ this.maghreb }}</p>
         </div>
         <div class="Toff" v-else>
-          <p>maghreb</p>
+          <p>Maghreb</p>
           <p>{{ this.maghreb }}</p>
         </div>
-        <div class="Ton" v-if="this.ok > this.maghrebT">
+        <div class="Ton" v-if="this.ok > this.maghrebT && this.ok < this.eshaT">
           <p>Isha</p>
           <p>{{ this.esha }}</p>
         </div>
@@ -77,7 +77,9 @@ export default {
     )
       .then((response) => response.json())
       .then((result) => {
-        console.log();
+        console.log(
+          parseInt(result.model.salahTimings[this.s].fajr.replace(":", ""))
+        );
         this.esha = result.model.salahTimings[this.s].isha;
         this.maghreb = result.model.salahTimings[this.s].maghrib;
         this.aser = result.model.salahTimings[this.s].asr;
@@ -86,18 +88,19 @@ export default {
         this.fajirT = parseInt(
           result.model.salahTimings[this.s].fajr.replace(":", "")
         );
-        this.aserT = parseInt(
+        this.duhrT = parseInt(
           result.model.salahTimings[this.s].zuhr.replace(":", "")
         );
-        this.maghrebT = parseInt(
+        this.aserT = parseInt(
           result.model.salahTimings[this.s].asr.replace(":", "")
         );
-        this.duhrT = parseInt(
+        this.maghrebT = parseInt(
           result.model.salahTimings[this.s].maghrib.replace(":", "")
         );
         this.eshaT = parseInt(
           result.model.salahTimings[this.s].isha.replace(":", "")
         );
+        console.log(this.ok);
       });
   },
   methods: {
@@ -117,20 +120,31 @@ export default {
 };
 </script>
 <style scoped>
-#Cbg {
-}
 .Ton {
   background: url("~@/assets/on.png");
   background-repeat: no-repeat;
-  height: 160px;
-  width: 180px;
+  height: 150px;
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(46, 255, 9);
+  font-size: 22px;
+  font-weight: 600;
 }
 .Toff {
   background: url("~@/assets/off.png");
   background-repeat: no-repeat;
-  height: 160px;
-  width: 180px;
+  height: 150px;
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(66, 58, 58);
+  font-weight: 600;
+  font-size: 20px;
 }
+
 #container {
   display: grid;
   grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
@@ -140,5 +154,21 @@ export default {
   position: absolute;
   left: 24%;
   top: 80%;
+}
+#Cbg {
+  -webkit-animation: fadein 3s;
+
+  animation: fadein 3s;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>

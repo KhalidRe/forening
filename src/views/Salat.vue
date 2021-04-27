@@ -1,6 +1,6 @@
 <template>
   <div id="bgs">
-    <div>
+    <div id="HeaderFade">
       <p id="gText">
         - Oskarshamns Mångkulturella Förening
       </p>
@@ -40,8 +40,26 @@ export default {
 <style>
 #Ppos {
   background: url("~@/assets/mosknbg.png");
-  width: 100vw;
   height: 120vh;
+  background-repeat: no-repeat;
+  -webkit-animation: fadein 1s;
+
+  animation: fadein 1s;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#HeaderFade {
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
 }
 .S .BgOpac {
   -webkit-transition: 1s;
@@ -51,8 +69,8 @@ export default {
 }
 #gText {
   color: #ffc02c;
-  top: 30%;
-  left: 28%;
+  top: 50%;
+  left: 10%;
   position: absolute;
   font-size: 1.4vw;
   font-weight: 600;
@@ -60,8 +78,8 @@ export default {
 #Header {
   font-size: 3.5vw;
   position: absolute;
-  left: 28%;
-  top: 35%;
+  left: 10%;
+  top: 55%;
   text-align: left;
 }
 .Enav {
