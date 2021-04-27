@@ -4,11 +4,11 @@
       <p id="gText">
         - Oskarshamns Mångkulturella Förening
       </p>
-    </div>
-    <h1 id="Header">
-      <b>Bönetider</b>
-    </h1>
 
+      <h1 id="Header">
+        <b>Bönetider</b>
+      </h1>
+    </div>
     <div id="Bcollection">
       <Enavbar class="Enav up" />
     </div>
@@ -39,9 +39,9 @@ export default {
 </script>
 <style>
 #Ppos {
-  position: absolute;
-  left: 23%;
-  margin-top: 14%;
+  background: url("~@/assets/mosknbg.png");
+  width: 100vw;
+  height: 120vh;
 }
 .S .BgOpac {
   -webkit-transition: 1s;
@@ -77,7 +77,7 @@ export default {
   height: 66px;
   position: absolute;
   left: 45.3vw;
-  top: 82vh;
+  top: 140vh;
   border-radius: 30px;
 }
 

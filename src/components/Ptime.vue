@@ -1,39 +1,57 @@
 <template>
   <div id="Ptime">
-    <div id="container">
-      <div class="Toff" v-if="date < fajr">
-        <p>Fajr</p>
-        <p>{{ this.fajir }}</p>
-      </div>
-      <div class="Ton" v-else>
-        <p>Fajr</p>
-        <p>{{ this.fajir }}</p>
-      </div>
-      <div>
-        <p>Zuhr</p>
-        <p>{{ this.duhr }}</p>
-      </div>
-      <div>
-        <p>Asr</p>
-        <p>{{ this.aser }}</p>
-      </div>
-      <div>
-        <p>maghreb</p>
-        <p>{{ this.maghreb }}</p>
-      </div>
-      <div>
-        <p>Isha</p>
-        <p>{{ this.esha }}</p>
+    <div id="Cbg">
+      <div id="container">
+        <div class="Ton" v-if="this.ok > this.eshaT">
+          <p>Fajr</p>
+          <p>{{ this.fajir }}</p>
+        </div>
+        <div class="Toff" v-else>
+          <p>Fajr</p>
+          <p>{{ this.fajir }}</p>
+        </div>
+        <div class="Ton" v-if="this.ok > this.fajirT">
+          <p>Zuhr</p>
+          <p>{{ this.duhr }}</p>
+        </div>
+        <div class="Toff" v-else>
+          <p>Zuhr</p>
+          <p>{{ this.duhr }}</p>
+        </div>
+        <div class="Ton" v-if="this.ok > this.duhrT">
+          <p>Asr</p>
+          <p>{{ this.aser }}</p>
+        </div>
+        <div class="Toff" v-else>
+          <p>Asr</p>
+          <p>{{ this.aser }}</p>
+        </div>
+        <div class="Ton" v-if="this.ok > this.aserT">
+          <p>maghreb</p>
+          <p>{{ this.maghreb }}</p>
+        </div>
+        <div class="Toff" v-else>
+          <p>maghreb</p>
+          <p>{{ this.maghreb }}</p>
+        </div>
+        <div class="Ton" v-if="this.ok > this.maghrebT">
+          <p>Isha</p>
+          <p>{{ this.esha }}</p>
+        </div>
+        <div class="Toff" v-else>
+          <p>Isha</p>
+          <p>{{ this.esha }}</p>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
+import moment from "moment";
 export default {
   name: "Ptime",
   data() {
     return {
-      Cdate: "",
       hover: false,
       day: null,
       month: null,
@@ -42,9 +60,16 @@ export default {
       aser: "",
       maghreb: "",
       esha: "",
-      ok: "",
+      ok: parseInt(moment().format("HHmm ")),
+
+      fajirT: null,
+      duhrT: null,
+      aserT: null,
+      maghrebT: null,
+      eshaT: null,
     };
   },
+  computed: {},
 
   created() {
     fetch(
@@ -52,17 +77,27 @@ export default {
     )
       .then((response) => response.json())
       .then((result) => {
-        console.log(result.model.salahTimings[this.s].fajr.replace(":", ""));
+        console.log();
         this.esha = result.model.salahTimings[this.s].isha;
         this.maghreb = result.model.salahTimings[this.s].maghrib;
         this.aser = result.model.salahTimings[this.s].asr;
         this.duhr = result.model.salahTimings[this.s].zuhr;
         this.fajir = result.model.salahTimings[this.s].fajr;
-        this.fajirT = result.model.salahTimings[this.s].fajr.replace(":", "");
-        this.aserT = result.model.salahTimings[this.s].zuhr.replace(":", "");
-        this.maghrebT = result.model.salahTimings[this.s].asr.replace(":", "");
-        this.duhrT = result.model.salahTimings[this.s].maghrib.replace(":", "");
-        this.eshaT = result.model.salahTimings[this.s].isha.replace(":", "");
+        this.fajirT = parseInt(
+          result.model.salahTimings[this.s].fajr.replace(":", "")
+        );
+        this.aserT = parseInt(
+          result.model.salahTimings[this.s].zuhr.replace(":", "")
+        );
+        this.maghrebT = parseInt(
+          result.model.salahTimings[this.s].asr.replace(":", "")
+        );
+        this.duhrT = parseInt(
+          result.model.salahTimings[this.s].maghrib.replace(":", "")
+        );
+        this.eshaT = parseInt(
+          result.model.salahTimings[this.s].isha.replace(":", "")
+        );
       });
   },
   methods: {
@@ -78,26 +113,32 @@ export default {
     var oneDay = 1000 * 60 * 60 * 24;
     var day = Math.floor(diff / oneDay);
     this.s = day;
-    let CurrentDate = now.getHours() + "" + now.getMinutes();
-    let intDate = parseInt(CurrentDate);
-    console.log(intDate);
-    this.Cdate = CurrentDate;
   },
 };
 </script>
 <style scoped>
+#Cbg {
+}
 .Ton {
-  background: url("~@/assets/off.png");
+  background: url("~@/assets/on.png");
+  background-repeat: no-repeat;
+  height: 160px;
+  width: 180px;
 }
 .Toff {
-  background: url("~@/assets/on.png");
+  background: url("~@/assets/off.png");
+  background-repeat: no-repeat;
+  height: 160px;
+  width: 180px;
 }
 #container {
   display: grid;
   grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
-  grid-column-gap: 0vw;
-  background-color: #6d96bb;
-  width: 50vw;
+  grid-column-gap: 1vw;
+
   border-radius: 1vw;
+  position: absolute;
+  left: 24%;
+  top: 80%;
 }
 </style>
