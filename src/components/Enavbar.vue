@@ -23,7 +23,7 @@ export default {
   color: #000000;
   margin-right: 2vw;
   padding: 10px;
-  background-color: rgb(231, 231, 231);
+  background-color: #d8d9da;
   border-radius: 5px;
   font-weight: 550;
   -webkit-transition: 1s;
@@ -32,7 +32,6 @@ export default {
   box-shadow: 0px 0px 10px 5px #ccc;
   border-radius: 25px;
   text-decoration: none;
-  font-size: 20px;
 }
 #nav a.router-link-exact-active {
 }

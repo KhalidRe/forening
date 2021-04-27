@@ -18,8 +18,6 @@ export default {
 };
 </script>
 <style>
-h1 {
-}
 #MobileNav {
   display: none;
 }
