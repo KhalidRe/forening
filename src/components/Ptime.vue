@@ -4,45 +4,48 @@
       <div id="container">
         <div class="Ton" v-if="this.ok > this.eshaT && this.ok < this.fajirT">
           <p>Fajr</p>
-          <p>{{ this.fajir }}</p>
+          <p>{{ this.salat.fajr }}</p>
         </div>
         <div class="Toff" v-else>
           <p>Fajr</p>
-          <p>{{ this.fajir }}</p>
+          <p>{{ this.salat.fajr }}</p>
         </div>
         <div class="Ton" v-if="this.ok > this.fajirT && this.ok < this.duhrT">
           <p>Zuhr</p>
-          <p>{{ this.duhr }}</p>
+          <p>{{ this.salat.zuhr }}</p>
         </div>
         <div class="Toff" v-else>
           <p>Zuhr</p>
-          <p>{{ this.duhr }}</p>
+          <p>{{ this.salat.zuhr }}</p>
         </div>
         <div class="Ton" v-if="this.ok > this.duhrT && this.ok < this.aserT">
           <p>Asr</p>
-          <p>{{ this.aser }}</p>
+          <p>{{ this.salat.asr }}</p>
         </div>
         <div class="Toff" v-else>
           <p>Asr</p>
-          <p>{{ this.aser }}</p>
+          <p>{{ this.salat.asr }}</p>
         </div>
         <div class="Ton" v-if="this.ok > this.aserT && this.ok < this.maghrebT">
           <p>Maghreb</p>
-          <p>{{ this.maghreb }}</p>
+          <p>{{ this.salat.maghrib }}</p>
         </div>
         <div class="Toff" v-else>
           <p>Maghreb</p>
-          <p>{{ this.maghreb }}</p>
+          <p>{{ this.salat.maghrib }}</p>
         </div>
         <div class="Ton" v-if="this.ok > this.maghrebT && this.ok < this.eshaT">
           <p>Isha</p>
-          <p>{{ this.esha }}</p>
+          <p>{{ this.salat.isha }}</p>
         </div>
         <div class="Toff" v-else>
           <p>Isha</p>
-          <p>{{ this.esha }}</p>
+          <p>{{ this.salat.isha }}</p>
         </div>
       </div>
+    </div>
+    <div>
+      {{ this.Month }}
     </div>
   </div>
 </template>
@@ -52,21 +55,22 @@ export default {
   name: "Ptime",
   data() {
     return {
-      hover: false,
-      day: null,
-      month: null,
-      fajir: "",
-      duhr: "",
-      aser: "",
-      maghreb: "",
-      esha: "",
+      MonthDH: "",
+      MonthF: "",
+      MonthA: "",
+      MonthM: "",
+      MonthI: "",
+      Monthday: "",
+      Month: null,
       ok: parseInt(moment().format("HHmm ")),
-
+      i: 0,
       fajirT: null,
       duhrT: null,
       aserT: null,
       maghrebT: null,
       eshaT: null,
+      all: "",
+      salat: "",
     };
   },
   computed: {},
@@ -77,14 +81,10 @@ export default {
     )
       .then((response) => response.json())
       .then((result) => {
-        console.log(
-          parseInt(result.model.salahTimings[this.s].fajr.replace(":", ""))
-        );
-        this.esha = result.model.salahTimings[this.s].isha;
-        this.maghreb = result.model.salahTimings[this.s].maghrib;
-        this.aser = result.model.salahTimings[this.s].asr;
-        this.duhr = result.model.salahTimings[this.s].zuhr;
-        this.fajir = result.model.salahTimings[this.s].fajr;
+        for (this.i = 0; this.i <= 31; this.i++) {
+          this.Month = result.model.salahTimings[this.s + this.i];
+        }
+        this.salat = result.model.salahTimings[this.s];
         this.fajirT = parseInt(
           result.model.salahTimings[this.s].fajr.replace(":", "")
         );
@@ -100,7 +100,6 @@ export default {
         this.eshaT = parseInt(
           result.model.salahTimings[this.s].isha.replace(":", "")
         );
-        console.log(this.ok);
       });
   },
   methods: {
@@ -120,27 +119,32 @@ export default {
 };
 </script>
 <style scoped>
+#Ptime {
+  position: relative;
+}
 .Ton {
   background: url("~@/assets/on.png");
   background-repeat: no-repeat;
-  height: 150px;
-  width: 170px;
+  height: 8vw;
+  width: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: rgb(46, 255, 9);
+  color: #423a3a;
   font-size: 22px;
   font-weight: 600;
+  background-size: contain;
 }
 .Toff {
   background: url("~@/assets/off.png");
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 150px;
-  width: 170px;
+  height: 8vw;
+  width: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: rgb(66, 58, 58);
+  color: #423a3a;
   font-weight: 600;
   font-size: 20px;
 }
@@ -149,16 +153,25 @@ export default {
   display: grid;
   grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
   grid-column-gap: 1vw;
-
   border-radius: 1vw;
-  position: absolute;
-  left: 24%;
-  top: 80%;
+  justify-items: center;
 }
 #Cbg {
   -webkit-animation: fadein 3s;
 
   animation: fadein 3s;
+  background: url("~@/assets/mosknbg.png");
+  height: 150vh;
+  background-position: center;
+  background-position-y: -5vh;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  padding: 0%;
+  position: relative;
 }
 @keyframes fadein {
   0% {

@@ -39,9 +39,7 @@ export default {
 </script>
 <style>
 #Ppos {
-  background: url("~@/assets/mosknbg.png");
-  height: 120vh;
-  background-repeat: no-repeat;
+  position: relative;
   -webkit-animation: fadein 1s;
 
   animation: fadein 1s;
