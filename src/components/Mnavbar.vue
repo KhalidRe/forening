@@ -1,66 +1,165 @@
 <template>
-  <div>
-    <div id="menuButton" v-on:click="toggle = !toggle">
-      <tasty-burger-button
-        type="emphatic"
-        color="#3CBF74"
-        :active-color="activeColor"
-      />
-    </div>
-    <transition id="yes" name="fade">
-      <div v-on:click="toggle = !toggle" v-if="toggle" id="mnav">
-        <router-link class="select" to="/">Oskarshamns MKF</router-link>
-        <router-link class="select" to="/about">Om oss</router-link>
-        <router-link class="select" to="/contact">Kontakta oss</router-link>
+  <div class="Mmenu" :class="{ 'Mmenu--hidden': !showNavbar }">
+    <div id="cont">
+      <div id="flexing">
+        <router-link id="H" to="/"></router-link>|
+        <router-link id="F" to="/forelasning"></router-link>|
+        <router-link id="E" to="/event"></router-link>|
+        <router-link id="L" to="/highlight"></router-link>|
+        <router-link id="S" to="/salat"></router-link>
       </div>
-    </transition>
+    </div>
   </div>
 </template>
 
 <script>
-import { TastyBurgerButton } from "vue-tasty-burgers";
-
 export default {
-  components: {
-    "tasty-burger-button": TastyBurgerButton,
-  },
+  components: {},
 
   data() {
     return {
-      activeColor: "green",
-
       toggle: false,
+      showNavbar: true,
+      lastScrollPosition: 0,
+      scrollValue: 0,
     };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.onScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.onScroll);
+  },
+  methods: {
+    onScroll() {
+      // Get the current scroll position
+      const currentScrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+      // Because of momentum scrolling on mobiles, we shouldn't continue if it is less than zero
+      if (currentScrollPosition < 0) {
+        return;
+      }
+      // Here we determine whether we need to show or hide the navbar
+      this.showNavbar = currentScrollPosition < this.lastScrollPosition;
+      // Set the current scroll position as the last scroll position
+      this.lastScrollPosition = currentScrollPosition;
+    },
+  },
+  onScroll() {
+    const currentScrollPosition =
+      window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScrollPosition < 0) {
+      return;
+    }
+    // Stop executing this function if the difference between
+    // current scroll position and last scroll position is less than some offset
+    if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 60) {
+      return;
+    }
+    this.showNavbar = currentScrollPosition < this.lastScrollPosition;
+    this.lastScrollPosition = currentScrollPosition;
   },
 };
 </script>
 <style scoped>
-.select {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  font-weight: 800;
+.Mmenu {
+  position: fixed;
+  transform: translate3d(0, 0, 0);
+  transition: 0.1s all ease-out;
 }
-#mnav {
-  background-color: white;
-  border-radius: 15px;
-  width: 200px;
+.Mmenu.Mmenu--hidden {
+  box-shadow: none;
+  transform: translate3d(0, 100%, 0);
+}
+#cont {
+  box-shadow: 0 8px 6px 5px black;
+  background-color: rgb(23, 166, 223);
+  width: 100vw;
+  height: 7vh;
+  margin-top: 5px;
+  border-radius: 20px 20px 0px 0px;
   display: flex;
-  flex-direction: column;
-  grid-gap: 20px;
-  padding: 30px;
-  top: 100%;
-  left: -180%;
-  position: absolute;
-  box-shadow: 0px 0px 100px 2000px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
 }
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
+#flexing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  height: 50px;
 }
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
+#S {
+  background-image: url("~@/assets/prayiconW.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 5px;
+  width: 50px;
+  height: 50px;
+}
+#H {
+  background-image: url("~@/assets/homeiconW.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+#F {
+  background-image: url("~@/assets/bookiconW.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+#E {
+  background-image: url("~@/assets/calendericonW.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+#L {
+  background-image: url("~@/assets/stariconW.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+@media only screen and (max-device-width: 438px) {
+  .Mmenu {
+    transform: translate3d(0, -0%, 0);
+    transition: 0.1s all ease-out;
+  }
+  .Mmenu.Mmenu--hidden {
+    box-shadow: none;
+    transform: translate3d(0, 100%, 0);
+  }
+  #S {
+    width: 40px;
+    height: 50px;
+  }
+  #H {
+    width: 40px;
+    height: 50px;
+  }
+  #E {
+    width: 40px;
+    height: 50px;
+  }
+  #L {
+    width: 40px;
+    height: 50px;
+  }
+  #F {
+    width: 40px;
+    height: 50px;
+  }
+  #cont {
+    width: 100vw;
+  }
+  #flexing {
+    gap: 20px;
+  }
 }
 </style>

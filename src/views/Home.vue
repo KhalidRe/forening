@@ -8,7 +8,7 @@
       <h1 id="Header">
         <b
           >Välkommen till en gemenskap <br />
-          Som skapar Ro och Frid.</b
+          för dig och alla.</b
         >
       </h1>
     </div>
@@ -21,6 +21,7 @@
         <div class="DownArrows bounce-1"></div>
       </div>
     </div>
+    <div id="approval">INVÄNTAR GODKÄNNANDE</div>
 
     <div id="LowSection"></div>
   </div>
@@ -35,6 +36,10 @@ export default {
 };
 </script>
 <style scoped>
+#approval {
+  font-size: 50px;
+  margin-top: 50vh;
+}
 .S .BgOpac {
   -webkit-transition: 1s;
 }
@@ -46,11 +51,11 @@ export default {
   top: 30%;
   left: 28%;
   position: absolute;
-  font-size: 1.4vw;
+  font-size: 1.7em;
   font-weight: 600;
 }
 #Header {
-  font-size: 3.5vw;
+  font-size: 3em;
   position: absolute;
   left: 28%;
   top: 35%;
@@ -132,10 +137,27 @@ export default {
 #LowSection {
   width: 2vw;
   height: 2vh;
-  margin-top: 1000vh;
+  margin-top: 100vh;
   position: absolute;
 }
 @media only screen and (max-device-width: 631px) {
+  .BgOpac {
+    margin-left: -29px;
+  }
+  #Header {
+    top: 25%;
+    left: 5%;
+    font-size: 2.3em;
+  }
+  #gText {
+    left: 5%;
+    top: 20%;
+    font-size: 1.2em;
+  }
+  #approval {
+    font-size: 50px;
+    margin-top: 120vh;
+  }
 }
 .fade-leave,
 .fade-enter {

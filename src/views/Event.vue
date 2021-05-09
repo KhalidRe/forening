@@ -5,7 +5,7 @@
     </div>
 
     <h1 id="Header">
-      <b>Evenemang</b>
+      <b>Evenemang </b>
     </h1>
     <div id="Bcollection">
       <Enavbar class="Enav up" />
@@ -15,7 +15,7 @@
         <div class="DownArrows bounce-1"></div>
       </div>
     </div>
-
+<div id="approval">INVÄNTAR GODKÄNNANDE</div>
     <div id="LowSection"></div>
   </div>
 </template>
@@ -29,7 +29,9 @@ export default {
 };
 </script>
 <style scoped>
-body {
+#approval {
+  font-size: 50px;
+  margin-top: 100vh;
 }
 .S .BgOpac {
   -webkit-transition: 1s;
@@ -122,9 +124,22 @@ body {
 #LowSection {
   width: 2vw;
   height: 2vh;
-  margin-top: 1000vh;
+  margin-top: 100vh;
   position: absolute;
 }
 @media only screen and (max-device-width: 631px) {
+  .BgOpac {
+    margin-left: -29px;
+  }
+  #Header {
+    top: 25%;
+    left: 5%;
+    font-size: 3em;
+  }
+  #gText {
+    left: 5%;
+    top: 20%;
+    font-size: 1.2em;
+  }
 }
 </style>

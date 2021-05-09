@@ -34,5 +34,11 @@ export default {
   text-decoration: none;
 }
 #nav a.router-link-exact-active {
+  color: #42b983;
+}
+@media only screen and (max-device-width: 850px) {
+  #nav {
+    display: none;
+  }
 }
 </style>

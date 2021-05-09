@@ -42,7 +42,8 @@ body {
   height: 100vmax;
   background-repeat: no-repeat, no-repeat, repeat;
   background-position: right bottom, top;
-  background-position-y: -17vh, -17vh, 130vh;
+  background-position-y: -17vh, -17vh, 1vh;
+  background-size: cover;
 }
 #logga {
   width: 120px;
@@ -59,18 +60,32 @@ body {
   body {
     background-size: cover;
   }
+
   #DesktopNav {
     display: none;
   }
   #MobileNav {
     display: block;
+    overflow: hidden;
     position: fixed;
-    margin-left: 80vw;
-    top: 0%;
+    bottom: 0;
+    width: 100%;
   }
   #logga {
     position: absolute;
     top: -3%;
+  }
+}
+@media only screen and (max-device-width: 850px) {
+  #DesktopNav {
+    display: none;
+  }
+  #MobileNav {
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 }
 </style>

@@ -35,8 +35,8 @@ export default {
 }
 #start {
   position: absolute;
-  left: 10%;
-  top: 5%;
+  left: 40px;
+  top: 100px;
 }
 #kontakt {
   right: 3%;

@@ -44,9 +44,44 @@
         </div>
       </div>
     </div>
-    <div>
-      {{ this.Month }}
-    </div>
+    <table id="HeadList">
+      <tr class="tr1">
+        <th>Månad</th>
+        <th>Dag</th>
+        <th>Fajr</th>
+        <th>Shorouq</th>
+        <th>Zuhr</th>
+        <th>Asr</th>
+        <th>Maghreb</th>
+        <th>Isha</th>
+      </tr>
+      <tr id="LowList" v-for="item in array" :key="item.day">
+        <td>
+          {{ item.month }}
+        </td>
+        <td>
+          {{ item.day }}
+        </td>
+        <td>
+          {{ item.fajr }}
+        </td>
+        <td>
+          {{ item.shouruq }}
+        </td>
+        <td>
+          {{ item.zuhr }}
+        </td>
+        <td>
+          {{ item.asr }}
+        </td>
+        <td>
+          {{ item.maghrib }}
+        </td>
+        <td>
+          {{ item.isha }}
+        </td>
+      </tr>
+    </table>
   </div>
 </template>
 <script>
@@ -55,6 +90,7 @@ export default {
   name: "Ptime",
   data() {
     return {
+      times: [],
       MonthDH: "",
       MonthF: "",
       MonthA: "",
@@ -71,6 +107,8 @@ export default {
       eshaT: null,
       all: "",
       salat: "",
+      esha: "",
+      array: [],
     };
   },
   computed: {},
@@ -81,10 +119,13 @@ export default {
     )
       .then((response) => response.json())
       .then((result) => {
+        this.times = result;
         for (this.i = 0; this.i <= 31; this.i++) {
           this.Month = result.model.salahTimings[this.s + this.i];
+          this.array.push(result.model.salahTimings[this.s + this.i]);
+          console.log(this.array);
         }
-        this.salat = result.model.salahTimings[this.s];
+
         this.fajirT = parseInt(
           result.model.salahTimings[this.s].fajr.replace(":", "")
         );
@@ -100,6 +141,7 @@ export default {
         this.eshaT = parseInt(
           result.model.salahTimings[this.s].isha.replace(":", "")
         );
+        this.salat = result.model.salahTimings[this.s];
       });
   },
   methods: {
@@ -119,28 +161,52 @@ export default {
 };
 </script>
 <style scoped>
+td {
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
+tr:nth-child(even) {
+  background: rgb(7, 199, 224);
+}
+#HeadList {
+  width: 100vw;
+
+  margin-top: -478px;
+  -webkit-animation: fadein 1s;
+
+  animation: fadein 1s;
+  background-color: #17aec8;
+}
+.tr1 {
+  background-color: #091c3f;
+}
+
 #Ptime {
   position: relative;
 }
 .Ton {
   background: url("~@/assets/on.png");
   background-repeat: no-repeat;
-  height: 8vw;
-  width: 20vh;
+  background-size: contain;
+  width: 170px;
+  height: 170px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #423a3a;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   background-size: contain;
 }
 .Toff {
   background: url("~@/assets/off.png");
-  background-size: contain;
+
   background-repeat: no-repeat;
-  height: 8vw;
-  width: 20vh;
+  background-size: contain;
+  width: 170px;
+  height: 170px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,21 +217,19 @@ export default {
 
 #container {
   display: grid;
-  grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
-  grid-column-gap: 1vw;
-  border-radius: 1vw;
+  grid-template-columns: 125px 125px 125px 125px 125px;
+  grid-column-gap: 50px;
+  border-radius: 50px;
   justify-items: center;
 }
 #Cbg {
-  -webkit-animation: fadein 3s;
-
-  animation: fadein 3s;
   background: url("~@/assets/mosknbg.png");
-  height: 150vh;
+  height: 1600px;
   background-position: center;
-  background-position-y: -5vh;
-  background-size: 100vw;
+  background-position-y: 50px;
+  background-size: 1900px;
   background-repeat: no-repeat;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,6 +246,66 @@ export default {
   }
   100% {
     opacity: 1;
+  }
+}
+@media only screen and (max-device-width: 873px) {
+  .Ton {
+    background: url("~@/assets/Longon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    color: #423a3a;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .Toff {
+    background: url("~@/assets/Longoff.png");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    color: #423a3a;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  #container {
+    display: grid;
+    grid-template-columns: 125px;
+    grid-row-gap: 1px;
+
+    justify-items: center;
+  }
+  #Cbg {
+    height: 1200px;
+    background-position: center;
+    background-position-y: 0px;
+    background-size: 1500px;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+  }
+  #HeadList {
+    margin-top: -353px;
+  }
+  td {
+    font-size: 1vh;
+    color: white;
+    font-weight: 600;
   }
 }
 </style>

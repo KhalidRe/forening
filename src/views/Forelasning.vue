@@ -15,7 +15,7 @@
         <div class="DownArrows bounce-1"></div>
       </div>
     </div>
-
+<div id="approval">INVÄNTAR GODKÄNNANDE</div>
     <div id="LowSection"></div>
   </div>
 </template>
@@ -29,7 +29,9 @@ export default {
 };
 </script>
 <style scoped>
-body {
+#approval {
+  font-size: 50px;
+  margin-top: 100vh;
 }
 .S .BgOpac {
   -webkit-transition: 1s;
@@ -42,11 +44,11 @@ body {
   top: 30%;
   left: 28%;
   position: absolute;
-  font-size: 1.4vw;
+  font-size: 1.7em;
   font-weight: 600;
 }
 #Header {
-  font-size: 3.5vw;
+  font-size: 3em;
   position: absolute;
   left: 28%;
   top: 35%;
@@ -122,9 +124,22 @@ body {
 #LowSection {
   width: 2vw;
   height: 2vh;
-  margin-top: 1000vh;
+  margin-top: 100vh;
   position: absolute;
 }
 @media only screen and (max-device-width: 631px) {
+  .BgOpac {
+    margin-left: -29px;
+  }
+  #Header {
+    top: 25%;
+    left: 5%;
+    font-size: 3em;
+  }
+  #gText {
+    left: 5%;
+    top: 20%;
+    font-size: 1.2em;
+  }
 }
 </style>

@@ -1,5 +1,10 @@
 <template>
   <div id="bgs">
+    <div id="Bcollection">
+      <Enavbar class="Enav up" />
+    </div>
+
+    <Ptime id="Ppos" />
     <div id="HeaderFade">
       <p id="gText">
         - Oskarshamns Mångkulturella Förening
@@ -9,18 +14,6 @@
         <b>Bönetider</b>
       </h1>
     </div>
-    <div id="Bcollection">
-      <Enavbar class="Enav up" />
-    </div>
-
-    <Ptime id="Ppos" />
-
-    <div class="S">
-      <div class="BgOpac set">
-        <div class="DownArrows bounce-1"></div>
-      </div>
-    </div>
-
     <div id="LowSection"></div>
   </div>
 </template>
@@ -39,7 +32,6 @@ export default {
 </script>
 <style>
 #Ppos {
-  position: relative;
   -webkit-animation: fadein 1s;
 
   animation: fadein 1s;
@@ -70,11 +62,11 @@ export default {
   top: 50%;
   left: 10%;
   position: absolute;
-  font-size: 1.4vw;
+  font-size: 2em;
   font-weight: 600;
 }
 #Header {
-  font-size: 3.5vw;
+  font-size: 4em;
   position: absolute;
   left: 10%;
   top: 55%;
@@ -150,9 +142,20 @@ export default {
 #LowSection {
   width: 2vw;
   height: 2vh;
-  margin-top: 1000vh;
+  margin-top: 10vh;
   position: absolute;
 }
 @media only screen and (max-device-width: 631px) {
+}
+@media only screen and (max-device-width: 873px) {
+  #Header {
+    top: 25%;
+    left: 5%;
+  }
+  #gText {
+    left: 5%;
+    top: 20%;
+    font-size: 1.2em;
+  }
 }
 </style>
