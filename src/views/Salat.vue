@@ -60,7 +60,7 @@ export default {
 }
 #gText {
   color: #ffc02c;
-  top: 50%;
+  top: 20%;
   left: 10%;
   position: absolute;
   font-size: 2em;
@@ -70,7 +70,7 @@ export default {
   font-size: 4em;
   position: absolute;
   left: 10%;
-  top: 55%;
+  top: 25%;
   text-align: left;
 }
 .Enav {

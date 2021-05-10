@@ -123,7 +123,6 @@ export default {
         for (this.i = 0; this.i <= 31; this.i++) {
           this.Month = result.model.salahTimings[this.s + this.i];
           this.array.push(result.model.salahTimings[this.s + this.i]);
-          console.log(this.array);
         }
 
         this.fajirT = parseInt(
@@ -178,6 +177,7 @@ tr:nth-child(even) {
 
   animation: fadein 1s;
   background-color: #17aec8;
+  position: absolute;
 }
 .tr1 {
   background-color: #091c3f;
@@ -225,10 +225,11 @@ tr:nth-child(even) {
 }
 #Cbg {
   background: url("~@/assets/mosknbg.png");
-  height: 1600px;
+  height: 1250px;
   background-position: center;
-  background-position-y: 50px;
+  background-position-y: -50px;
   background-size: 1900px;
+
   background-repeat: no-repeat;
 
   display: flex;
