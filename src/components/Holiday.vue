@@ -6,81 +6,85 @@
           <p class="Date">11</p>
         </div>
         <div class="contText">
-          <h4>Maj</h4>
-          <p>Lailat Al Miraj</p>
-          <p>Firar profeten Muhammeds uppstigning till himlen.</p>
+          <p class="text">Mars</p>
+          <h4 class="text">Lailat Al Miraj</h4>
+          <p class="text">Läs Mer</p>
         </div>
       </div>
       <div class="conts">
         <div class="DivC"><p class="Date">28</p></div>
         <div class="contText">
-          <h4>Mars</h4>
-          <p>Lailat Al Bara'ah</p>
-          <p>info</p>
+          <p class="text">Mars</p>
+          <h4 class="text">Lailat Al Bara'ah</h4>
+          <p class="text">Läs Mer</p>
         </div>
       </div>
       <div class="conts">
         <div class="DivC"><p class="Date">12</p></div>
         <div class="contText">
-          <h4>april</h4>
-          <p>Ramadan</p>
-          <p>Info</p>
+          <p class="text">april</p>
+          <h4 class="text">Ramadan</h4>
+          <p class="text">
+            Läs Mer
+          </p>
         </div>
       </div>
       <div class="conts">
         <div class="DivC"><p class="Date">9</p></div>
         <div class="contText">
-          <h4>Maj</h4>
-          <p>Laylat Al Qadr</p>
-          <p>Info</p>
+          <p class="text">Maj</p>
+          <h4 class="text">Laylat Al Qadr</h4>
+          <p class="text">
+            Läs Mer
+          </p>
         </div>
       </div>
       <div class="conts">
         <div class="DivC"><p class="Date">13</p></div>
         <div class="contText">
-          <h4>Maj</h4>
-          <p>Eid Al Iftar</p>
-          <p>Info</p>
+          <p class="text">Maj</p>
+          <h4 class="text">Eid Al Iftar</h4>
+          <p class="text">Läs Mer</p>
         </div>
       </div>
       <div class="conts">
         <div class="DivC"><p class="Date">19</p></div>
         <div class="contText">
-          <h4>July</h4>
-          <p>Waqf Al Arafa - Hajj</p>
-          <p>info</p>
+          <p class="text">July</p>
+          <h4 class="text">Waqf Al Arafa - Hajj</h4>
+          <p class="text">Läs Mer</p>
         </div>
       </div>
       <div class="conts">
         <div class="DivC"><p class="Date">22</p></div>
         <div class="contText">
-          <h4>July</h4>
-          <p>Eid Al Adha</p>
-          <p>Info</p>
+          <p class="text">July</p>
+          <h4 class="text">Eid Al Adha</h4>
+          <p class="text">Läs Mer</p>
         </div>
       </div>
       <div class="conts">
         <div class="DivC"><p class="Date">9</p></div>
         <div class="contText">
-          <h4>Augusti</h4>
-          <p>Hijra - Islamisk Nyår</p>
-          <p>Info</p>
+          <p class="text">Augusti</p>
+          <h4 class="text">Hijra - Islamisk Nyår</h4>
+          <p class="text">Läs Mer</p>
         </div>
       </div>
       <div class="conts">
         <div class="DivC"><p class="Date">18</p></div>
         <div class="contText">
-          <h4>Augusti</h4>
-          <p>Day of Ashura / Muharram</p>
-          <p>Info</p>
+          <p class="text">Augusti</p>
+          <h4 class="text">Day of Ashura / Muharram</h4>
+          <p class="text">Läs Mer</p>
         </div>
       </div>
       <div class="conts">
         <div class="DivC"><p class="Date">19</p></div>
         <div class="contText">
-          <h4>October</h4>
-          <p>Profetens Födelsedag</p>
-          <p>Info</p>
+          <p class="text">October</p>
+          <h4 class="text">Profetens Födelsedag</h4>
+          <p class="text">Läs Mer</p>
         </div>
       </div>
     </div>
@@ -92,14 +96,22 @@ export default {
 };
 </script>
 <style scoped>
+.text {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
 .contText {
   color: white;
   text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-weight: 600;
 }
 .conts {
   display: flex;
-  gap: 1vh;
-  width: 30vw;
+  gap: 0vh;
+  width: 24vw;
 }
 .DivC {
   display: flex;
@@ -122,7 +134,7 @@ export default {
   display: grid;
   grid-template-columns: 125px 125px;
   grid-row-gap: 0vh;
-  grid-column-gap: 50vh;
+  grid-column-gap: 70vh;
 
   justify-items: center;
   margin-top: 2vh;
