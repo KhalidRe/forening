@@ -15,7 +15,7 @@
         <div class="DownArrows bounce-1"></div>
       </div>
     </div>
-<div id="approval">INVÄNTAR GODKÄNNANDE</div>
+    <div id="approval">INVÄNTAR GODKÄNNANDE</div>
     <div id="LowSection"></div>
   </div>
 </template>
@@ -48,7 +48,7 @@ export default {
   font-weight: 600;
 }
 #Header {
-  font-size: 3.5vw;
+  font-size: 3em;
   position: absolute;
   left: 28%;
   top: 35%;

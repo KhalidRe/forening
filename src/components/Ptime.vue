@@ -163,7 +163,7 @@ export default {
 <style scoped>
 td {
   height: 40px;
-  font-size: 20px;
+  font-size: 1em;
   color: white;
   font-weight: 600;
 }
@@ -171,8 +171,8 @@ tr:nth-child(even) {
   background: rgb(7, 199, 224);
 }
 #HeadList {
+  overflow: hidden;
   width: 100vw;
-
   margin-top: -478px;
   -webkit-animation: fadein 1s;
 
@@ -181,6 +181,7 @@ tr:nth-child(even) {
 }
 .tr1 {
   background-color: #091c3f;
+  width: 10vw;
 }
 
 #Ptime {
@@ -262,6 +263,7 @@ tr:nth-child(even) {
     color: #423a3a;
     font-size: 20px;
     font-weight: 600;
+    gap: 10px;
   }
   .Toff {
     background: url("~@/assets/Longoff.png");
@@ -277,12 +279,12 @@ tr:nth-child(even) {
     color: #423a3a;
     font-weight: 600;
     font-size: 20px;
+    gap: 10px;
   }
   #container {
     display: grid;
     grid-template-columns: 125px;
-    grid-row-gap: 1px;
-
+    grid-row-gap: 5px;
     justify-items: center;
   }
   #Cbg {

@@ -138,22 +138,30 @@ export default {
   #S {
     width: 40px;
     height: 50px;
+    background-position-y: 10px;
   }
   #H {
     width: 40px;
     height: 50px;
+    background-position-y: 5px;
   }
   #E {
     width: 40px;
     height: 50px;
+    background-position-y: 8px;
+    background-size: 35px;
   }
   #L {
     width: 40px;
     height: 50px;
+    background-position-y: 10px;
+    background-size: 35px;
   }
   #F {
     width: 40px;
     height: 50px;
+    background-position-y: 7px;
+    background-size: 40px;
   }
   #cont {
     width: 100vw;

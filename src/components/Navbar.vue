@@ -14,7 +14,7 @@ export default {
 <style scoped>
 #nav {
   padding: 30px;
-  background: linear-gradient(#000000, #b1b1b100);
+  background: linear-gradient(#00000036, #b1b1b100);
 }
 #nav a {
   font-weight: bold;

@@ -32,6 +32,7 @@ export default {
 </script>
 <style>
 #Ppos {
+  overflow: hidden;
   -webkit-animation: fadein 1s;
 
   animation: fadein 1s;

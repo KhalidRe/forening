@@ -21,7 +21,56 @@
         <div class="DownArrows bounce-1"></div>
       </div>
     </div>
-    <div id="approval">INVÄNTAR GODKÄNNANDE</div>
+    <div id="DesktopCards">
+      <div id="txt1">
+        <h1>OM OSS</h1>
+        <p>
+          Oskarshamns mångkulturella föreningen jobbar med demokrati,
+          integration, jämställdhet, kultur och fritid. Föreningens medlemmar
+          har stort intresse för att hjälpa varandra att komma in det svenska
+          samhället och samtidigt bevara sin egen kultur, språk och traditioner.
+          OMKF har ett samarbetes avtal med studieförbundet NBV sedan februari
+          2019. Vi befinner oss centralt i Oskarshamns gamla församlingshem
+        </p>
+      </div>
+      <div id="img1"></div>
+
+      <div id="img2"></div>
+      <div id="txt2">
+        <p>
+          110 medlemmar av våran ekonomi bygger på medlemsavgifter och
+          donationer, bland annat ifrån föräldrar som har barn som är aktiva i
+          våran förening, via swish. Vi har även en insammlingsbössa i våran
+          lokal där besökare kan skänka pengar. Vi har även ansökt om ett
+          90-konto för att kunna möjliggöra det för företag, stiftelser och
+          privatpersoner i Sverige och från andra länder att donera till våran
+          förening. <br />
+          <br />
+        </p>
+        <div id="ltxt">
+          <p>
+            <strong>Målet</strong> med våra insamlingar är att kunna äga våran
+            egna lokal, och för att kunna satsa mer på integration, språk och
+            kultur, demokrati och föreläsningar om beteende, droger, alkohol och
+            kriminalitet. Finans och insamlingspolicy syftar till att
+            säkerställa och att medelsförvaltningen sker på ett
+            tillfredsställande sätt, och att insamlings- och administrations
+            kostnaderna inte är för höga och att medel används i enlighet med av
+            OMKF fastställda ändmål och att utbetalningar till samarbetspartners
+            kan kontrolleras tillförlitligt.
+            <br />
+            <br />
+            <strong> Syftet </strong> OMKF :s Finans- och insamlingspolicy är
+            att klargöra ansvarsfördelning och administrativa regler rörande
+            hantering av inkomna medel i fastställa policy. EY Revisorsbyrån
+            Annica Ericson Östra Torggatan 1 57230 Oskarshamn <br />
+            Tel 0491 87900
+          </p>
+        </div>
+      </div>
+      <div id="txt3"></div>
+      <div id="img3"></div>
+    </div>
 
     <div id="LowSection"></div>
   </div>
@@ -36,9 +85,43 @@ export default {
 };
 </script>
 <style scoped>
-#approval {
-  font-size: 50px;
+#img1 {
+  background-image: url("~@/assets/Together2.png");
+  width: 30vw;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: rgb(202, 195, 195) 1px 1px 30px 1px;
+  border-radius: 4px;
+}
+#txt1 p {
+  font-size: 1.3rem;
+  width: 25vw;
+  text-align: left;
+}
+
+#img2 {
+  background-image: url("~@/assets/Classroom.png");
+  width: 30vw;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: rgb(202, 195, 195) 1px 1px 30px 1px;
+  border-radius: 4px;
+}
+
+#txt2 p {
+  font-size: 1.3rem;
+  width: 40vw;
+  text-align: left;
+}
+#DesktopCards {
   margin-top: 50vh;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-row-gap: 50vh;
+  justify-content: center;
+  justify-items: center;
 }
 .S .BgOpac {
   -webkit-transition: 1s;
@@ -140,7 +223,47 @@ export default {
   margin-top: 100vh;
   position: absolute;
 }
-@media only screen and (max-device-width: 631px) {
+@media only screen and (max-device-width: 850px) {
+  #DesktopCards {
+    margin-top: 100vh;
+    display: grid;
+    grid-template-columns: 1;
+    grid-row-gap: 10vh;
+    justify-content: center;
+    justify-items: center;
+  }
+  #img1 {
+    width: 45vw;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgb(202, 195, 195) 1px 1px 30px 1px;
+    border-radius: 4px;
+  }
+  #txt1 p {
+    font-size: 1rem;
+    width: 40vw;
+    text-align: left;
+    font-weight: 600;
+  }
+  #img2 {
+    width: 45vw;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgb(202, 195, 195) 1px 1px 30px 1px;
+    border-radius: 4px;
+  }
+
+  #txt2 p {
+    font-size: 1rem;
+    width: 40vw;
+    text-align: left;
+    font-weight: 600;
+  }
+  #ltxt {
+    font-size: 50px;
+  }
   .BgOpac {
     margin-left: -29px;
   }
@@ -155,7 +278,7 @@ export default {
     font-size: 1.2em;
   }
   #approval {
-    font-size: 50px;
+    font-size: 20;
     margin-top: 120vh;
   }
 }

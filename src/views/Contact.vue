@@ -10,7 +10,28 @@
     <div id="Bcollection">
       <Enavbar class="Enav up" />
     </div>
-    <div id="approval">INVÄNTAR GODKÄNNANDE</div>
+    <div id="approval">
+      <p>
+        Kontakta oss Hör av dig till oss på Oskarshamns mångkulturella
+        föreningen om du har några frågor. Fyll gärna i kontaktformuläret så hör
+        vi av oss till dig! <br />
+        Besöksadress: Södralånggatan 11B 572 55 Oskarshamn <br />
+        E post:
+        <a class="links" href="mailto: mkfioh@gmail.com">mkfioh@gmail.com</a>
+      </p>
+    </div>
+    <div id="Styrelse">
+      <h2 id="StH">OMKF består av Styrelse Ordförande:</h2>
+      <br />
+      <p id="StP">
+        <br />
+        <strong> Styrelse Ordförande:</strong> Abdou Elbany <br />
+        <strong> Sekreterare: </strong> Abdelouahab Boussefres <br />
+        <strong> Kassör: </strong> Jusuf Mohamad 4 <br />
+        <strong> ledamöter: </strong> Faton Ejupi, Faruk Tuzlo, Basim Twmae &
+        Mohammed Ezzat
+      </p>
+    </div>
   </div>
 </template>
 <script>
@@ -23,9 +44,32 @@ export default {
 };
 </script>
 <style scoped>
+.links {
+  color: #ffc02c;
+}
+#Styrelse {
+  margin-top: 30vh;
+  margin-left: 1vw;
+}
+#StH {
+  float: left;
+}
+#StP {
+  font-size: 1.2em;
+
+  text-align: left;
+}
 #approval {
-  font-size: 50px;
-  margin-top: 100vh;
+  margin-top: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+#approval p {
+  font-size: 2em;
+  width: 70vw;
+  color: rgb(255, 255, 255);
 }
 .S .BgOpac {
   -webkit-transition: 1s;
