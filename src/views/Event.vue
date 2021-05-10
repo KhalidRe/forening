@@ -139,7 +139,7 @@ export default {
   #gText {
     left: 5%;
     top: 20%;
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 </style>
