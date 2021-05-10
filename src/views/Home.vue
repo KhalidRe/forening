@@ -47,6 +47,23 @@
           donera till våran förening. <br />
           <br />
         </p>
+        <p id="ltxtD">
+          <strong>Målet</strong> med våra insamlingar är att kunna äga våran
+          egna lokal, och för att kunna satsa mer på integration, språk och
+          kultur, demokrati och föreläsningar om beteende, droger, alkohol och
+          kriminalitet. Finans och insamlingspolicy syftar till att säkerställa
+          och att medelsförvaltningen sker på ett tillfredsställande sätt, och
+          att insamlings- och administrations kostnaderna inte är för höga och
+          att medel används i enlighet med av OMKF fastställda ändmål och att
+          utbetalningar till samarbetspartners kan kontrolleras tillförlitligt.
+          <br />
+          <br />
+          <strong> Syftet </strong> OMKF :s Finans- och insamlingspolicy är att
+          klargöra ansvarsfördelning och administrativa regler rörande hantering
+          av inkomna medel i fastställa policy. EY Revisorsbyrån Annica Ericson
+          Östra Torggatan 1 57230 Oskarshamn <br />
+          Tel 0491 87900
+        </p>
       </div>
     </div>
     <p id="ltxt">
@@ -218,6 +235,9 @@ export default {
   margin-top: 100vh;
   position: absolute;
 }
+#ltxt {
+  display: none;
+}
 @media only screen and (max-device-width: 850px) {
   #DesktopCards {
     margin-top: 100vh;
@@ -251,18 +271,22 @@ export default {
   }
 
   #txt2 p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: 40vw;
     text-align: left;
     font-weight: 600;
   }
   #ltxt {
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: 75vw;
     text-align: left;
     font-weight: 600;
     margin-left: 5vw;
     margin-top: -3vh;
+    display: block;
+  }
+  #ltxtD {
+    display: none;
   }
   .BgOpac {
     margin-left: -29px;
