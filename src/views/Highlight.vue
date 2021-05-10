@@ -10,25 +10,25 @@
     <div id="Bcollection">
       <Enavbar class="Enav up" />
     </div>
-    <div class="S">
-      <div class="BgOpac set">
-        <div class="DownArrows bounce-1"></div>
-      </div>
-    </div>
-    <div id="approval">INVÄNTAR GODKÄNNANDE</div>
-    <div id="LowSection"></div>
+
+    <div id="HolidayC"><Holiday /></div>
   </div>
 </template>
 <script>
 import Enavbar from "@/components/Enavbar.vue";
+import Holiday from "../components/Holiday.vue";
 export default {
   components: {
     Enavbar,
+    Holiday,
   },
   methods: {},
 };
 </script>
 <style scoped>
+#HolidayC {
+  background-image: linear-gradient(to right, #5492b1 20%, #035179 100%);
+}
 #approval {
   font-size: 50px;
   margin-top: 100vh;
@@ -41,8 +41,8 @@ export default {
 }
 #gText {
   color: #ffc02c;
-  top: 30%;
-  left: 28%;
+  top: 17%;
+  left: 10%;
   position: absolute;
   font-size: 1.7em;
   font-weight: 600;
@@ -50,8 +50,8 @@ export default {
 #Header {
   font-size: 3em;
   position: absolute;
-  left: 28%;
-  top: 35%;
+  left: 10%;
+  top: 23%;
   text-align: left;
 }
 .Enav {
