@@ -170,14 +170,14 @@ tr:nth-child(even) {
   background: rgb(7, 199, 224);
 }
 #HeadList {
+  position: absolute;
   overflow: hidden;
-  width: 100vw;
+  width: 99vw;
   margin-top: -478px;
   -webkit-animation: fadein 1s;
 
   animation: fadein 1s;
   background-color: #17aec8;
-  position: absolute;
 }
 .tr1 {
   background-color: #091c3f;
