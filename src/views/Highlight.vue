@@ -27,6 +27,7 @@ export default {
 </script>
 <style scoped>
 #HolidayC {
+  margin-top: 30vh;
   background-image: linear-gradient(to right, #5492b1 20%, #035179 100%);
 }
 #approval {
@@ -41,7 +42,7 @@ export default {
 }
 #gText {
   color: #ffc02c;
-  top: 17%;
+  top: 25%;
   left: 10%;
   position: absolute;
   font-size: 1.7em;
@@ -51,7 +52,7 @@ export default {
   font-size: 3em;
   position: absolute;
   left: 10%;
-  top: 23%;
+  top: 30%;
   text-align: left;
 }
 .Enav {
