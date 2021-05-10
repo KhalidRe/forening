@@ -38,39 +38,34 @@
       <div id="img2"></div>
       <div id="txt2">
         <p>
-          110 medlemmar av våran ekonomi bygger på medlemsavgifter och
-          donationer, bland annat ifrån föräldrar som har barn som är aktiva i
-          våran förening, via swish. Vi har även en insammlingsbössa i våran
-          lokal där besökare kan skänka pengar. Vi har även ansökt om ett
-          90-konto för att kunna möjliggöra det för företag, stiftelser och
-          privatpersoner i Sverige och från andra länder att donera till våran
-          förening. <br />
+          <strong>110</strong> medlemmar av våran ekonomi bygger på
+          medlemsavgifter och donationer, bland annat ifrån föräldrar som har
+          barn som är aktiva i våran förening, via swish. Vi har även en
+          insammlingsbössa i våran lokal där besökare kan skänka pengar. Vi har
+          även ansökt om ett 90-konto för att kunna möjliggöra det för företag,
+          stiftelser och privatpersoner i Sverige och från andra länder att
+          donera till våran förening. <br />
           <br />
         </p>
-        <div id="ltxt">
-          <p>
-            <strong>Målet</strong> med våra insamlingar är att kunna äga våran
-            egna lokal, och för att kunna satsa mer på integration, språk och
-            kultur, demokrati och föreläsningar om beteende, droger, alkohol och
-            kriminalitet. Finans och insamlingspolicy syftar till att
-            säkerställa och att medelsförvaltningen sker på ett
-            tillfredsställande sätt, och att insamlings- och administrations
-            kostnaderna inte är för höga och att medel används i enlighet med av
-            OMKF fastställda ändmål och att utbetalningar till samarbetspartners
-            kan kontrolleras tillförlitligt.
-            <br />
-            <br />
-            <strong> Syftet </strong> OMKF :s Finans- och insamlingspolicy är
-            att klargöra ansvarsfördelning och administrativa regler rörande
-            hantering av inkomna medel i fastställa policy. EY Revisorsbyrån
-            Annica Ericson Östra Torggatan 1 57230 Oskarshamn <br />
-            Tel 0491 87900
-          </p>
-        </div>
       </div>
-      <div id="txt3"></div>
-      <div id="img3"></div>
     </div>
+    <p id="ltxt">
+      <strong>Målet</strong> med våra insamlingar är att kunna äga våran egna
+      lokal, och för att kunna satsa mer på integration, språk och kultur,
+      demokrati och föreläsningar om beteende, droger, alkohol och kriminalitet.
+      Finans och insamlingspolicy syftar till att säkerställa och att
+      medelsförvaltningen sker på ett tillfredsställande sätt, och att
+      insamlings- och administrations kostnaderna inte är för höga och att medel
+      används i enlighet med av OMKF fastställda ändmål och att utbetalningar
+      till samarbetspartners kan kontrolleras tillförlitligt.
+      <br />
+      <br />
+      <strong> Syftet </strong> OMKF :s Finans- och insamlingspolicy är att
+      klargöra ansvarsfördelning och administrativa regler rörande hantering av
+      inkomna medel i fastställa policy. EY Revisorsbyrån Annica Ericson Östra
+      Torggatan 1 57230 Oskarshamn <br />
+      Tel 0491 87900
+    </p>
 
     <div id="LowSection"></div>
   </div>
@@ -262,7 +257,12 @@ export default {
     font-weight: 600;
   }
   #ltxt {
-    font-size: 50px;
+    font-size: 1rem;
+    width: 75vw;
+    text-align: left;
+    font-weight: 600;
+    margin-left: 5vw;
+    margin-top: -3vh;
   }
   .BgOpac {
     margin-left: -29px;
