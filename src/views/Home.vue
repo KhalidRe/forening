@@ -271,13 +271,13 @@ export default {
   }
 
   #txt2 p {
-    font-size: 0.9rem;
+    font-size: 1.85vh;
     width: 40vw;
     text-align: left;
     font-weight: 600;
   }
   #ltxt {
-    font-size: 0.9rem;
+    font-size: 2vh;
     width: 75vw;
     text-align: left;
     font-weight: 600;
