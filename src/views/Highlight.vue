@@ -13,7 +13,7 @@
     </div>
 
     <div id="HolidayC"><Holiday /></div>
-    <Flipcards />
+    <Flipcards id="s1" />
   </div>
 </template>
 <!-- eslint-disable -->
@@ -31,6 +31,9 @@ export default {
 };
 </script>
 <style scoped>
+#s1 {
+  display: none;
+}
 #HolidayC {
   margin-top: 30vh;
   background-image: linear-gradient(to right, #5492b1 20%, #035179 100%);

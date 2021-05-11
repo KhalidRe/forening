@@ -30,17 +30,15 @@
               <div class="icon">
                 <i class="fas fa-users"></i>
               </div>
+              <span>10/3</span>
             </div>
             <div class="info">
               <div class="icon">
                 <i class="fas fa-door-open"></i>
               </div>
+              <span>2021</span>
             </div>
-            <div class="info">
-              <div class="icon">
-                <i class="fas fa-bed"></i>
-              </div>
-            </div>
+
             <div class="info">
               <div class="icon">
                 <i class="fas fa-bath"></i>
@@ -60,7 +58,8 @@
             </div>
             <div class="location">Lailat Al Miraj</div>
             <div class="price">.</div>
-            <label for="card1" class="button return" aria-hidden="true">
+            <label for="card1" class="button return" aria-hidden="true"
+              ><span>Stäng</span>
               <i class="fas fa-arrow-left"></i>
             </label>
           </div>
@@ -77,7 +76,7 @@
           "
         >
           <div class="inner">
-            <h2>Lailat Al Miraj</h2>
+            <h2>Shaban</h2>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -96,12 +95,15 @@
               <div class="icon">
                 <i class="fas fa-users"></i>
               </div>
+              <span>23/5</span>
             </div>
             <div class="info">
               <div class="icon">
                 <i class="fas fa-door-open"></i>
               </div>
+              <span>2021</span>
             </div>
+
             <div class="info">
               <div class="icon">
                 <i class="fas fa-bed"></i>
@@ -124,9 +126,10 @@
                 tenetur nemo amet temporibus, enim soluta nam, debitis.
               </p>
             </div>
-            <div class="location">Lailat Al Miraj</div>
+            <div class="location">Shaban</div>
             <div class="price">.</div>
-            <label for="card12" class="button return" aria-hidden="true">
+            <label for="card12" class="button return" aria-hidden="true"
+              ><span>Stäng</span>
               <i class="fas fa-arrow-left"></i>
             </label>
           </div>
@@ -143,7 +146,7 @@
           "
         >
           <div class="inner">
-            <h2>Lailat Al Miraj</h2>
+            <h2>Ramadan</h2>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -162,11 +165,13 @@
               <div class="icon">
                 <i class="fas fa-users"></i>
               </div>
+              <span>12/4</span>
             </div>
             <div class="info">
               <div class="icon">
                 <i class="fas fa-door-open"></i>
               </div>
+              <span>2021</span>
             </div>
             <div class="info">
               <div class="icon">
@@ -190,9 +195,10 @@
                 tenetur nemo amet temporibus, enim soluta nam, debitis.
               </p>
             </div>
-            <div class="location">Lailat Al Miraj</div>
+            <div class="location">Ramadan</div>
             <div class="price">.</div>
-            <label for="card11" class="button return" aria-hidden="true">
+            <label for="card11" class="button return" aria-hidden="true"
+              ><span>Stäng</span>
               <i class="fas fa-arrow-left"></i>
             </label>
           </div>
@@ -209,7 +215,7 @@
           "
         >
           <div class="inner">
-            <h2>Lailat Al Miraj</h2>
+            <h2>Laylat Al Qadr</h2>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -228,11 +234,13 @@
               <div class="icon">
                 <i class="fas fa-users"></i>
               </div>
+              <span>09/5</span>
             </div>
             <div class="info">
               <div class="icon">
                 <i class="fas fa-door-open"></i>
               </div>
+              <span>2021</span>
             </div>
             <div class="info">
               <div class="icon">
@@ -256,9 +264,10 @@
                 tenetur nemo amet temporibus, enim soluta nam, debitis.
               </p>
             </div>
-            <div class="location">Lailat Al Miraj</div>
+            <div class="location">Laylat Al Qadr</div>
             <div class="price">.</div>
-            <label for="card9" class="button return" aria-hidden="true">
+            <label for="card9" class="button return" aria-hidden="true"
+              ><span>Stäng</span>
               <i class="fas fa-arrow-left"></i>
             </label>
           </div>
@@ -275,7 +284,7 @@
           "
         >
           <div class="inner">
-            <h2>Lailat Al Miraj</h2>
+            <h2>Eid Al Iftar</h2>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -294,11 +303,13 @@
               <div class="icon">
                 <i class="fas fa-users"></i>
               </div>
+              <span>13/5</span>
             </div>
             <div class="info">
               <div class="icon">
                 <i class="fas fa-door-open"></i>
               </div>
+              <span>2021</span>
             </div>
             <div class="info">
               <div class="icon">
@@ -322,9 +333,10 @@
                 tenetur nemo amet temporibus, enim soluta nam, debitis.
               </p>
             </div>
-            <div class="location">Lailat Al Miraj</div>
+            <div class="location">Eid Al Iftar</div>
             <div class="price">.</div>
-            <label for="card8" class="button return" aria-hidden="true">
+            <label for="card8" class="button return" aria-hidden="true"
+              ><span>Stäng</span>
               <i class="fas fa-arrow-left"></i>
             </label>
           </div>
@@ -341,7 +353,7 @@
           "
         >
           <div class="inner">
-            <h2>Lailat Al Miraj</h2>
+            <h2>Waqf Al Arafa - Hajj</h2>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -360,11 +372,13 @@
               <div class="icon">
                 <i class="fas fa-users"></i>
               </div>
+              <span>19/7</span>
             </div>
             <div class="info">
               <div class="icon">
                 <i class="fas fa-door-open"></i>
               </div>
+              <span>2021</span>
             </div>
             <div class="info">
               <div class="icon">
@@ -388,9 +402,10 @@
                 tenetur nemo amet temporibus, enim soluta nam, debitis.
               </p>
             </div>
-            <div class="location">Lailat Al Miraj</div>
+            <div class="location">Waqf Al Arafa - Hajj</div>
             <div class="price">.</div>
-            <label for="card6" class="button return" aria-hidden="true">
+            <label for="card6" class="button return" aria-hidden="true"
+              ><span>Stäng</span>
               <i class="fas fa-arrow-left"></i>
             </label>
           </div>
@@ -407,7 +422,7 @@
           "
         >
           <div class="inner">
-            <h2>Lailat Al Miraj</h2>
+            <h2>Eid Al Adha</h2>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -426,11 +441,13 @@
               <div class="icon">
                 <i class="fas fa-users"></i>
               </div>
+              <span>22/7</span>
             </div>
             <div class="info">
               <div class="icon">
                 <i class="fas fa-door-open"></i>
               </div>
+              <span>2021</span>
             </div>
             <div class="info">
               <div class="icon">
@@ -454,9 +471,10 @@
                 tenetur nemo amet temporibus, enim soluta nam, debitis.
               </p>
             </div>
-            <div class="location">Lailat Al Miraj</div>
+            <div class="location">Eid Al Adha</div>
             <div class="price">.</div>
-            <label for="card5" class="button return" aria-hidden="true">
+            <label for="card5" class="button return" aria-hidden="true"
+              ><span>Stäng</span>
               <i class="fas fa-arrow-left"></i>
             </label>
           </div>
@@ -473,7 +491,7 @@
           "
         >
           <div class="inner">
-            <h2>Lailat Al Miraj</h2>
+            <h2>Hijra - Islamisk Nyår</h2>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -492,11 +510,13 @@
               <div class="icon">
                 <i class="fas fa-users"></i>
               </div>
+              <span>09/8</span>
             </div>
             <div class="info">
               <div class="icon">
                 <i class="fas fa-door-open"></i>
               </div>
+              <span>2021</span>
             </div>
             <div class="info">
               <div class="icon">
@@ -520,9 +540,10 @@
                 tenetur nemo amet temporibus, enim soluta nam, debitis.
               </p>
             </div>
-            <div class="location">Lailat Al Miraj</div>
+            <div class="location">Hijra - Islamisk Nyår</div>
             <div class="price">.</div>
-            <label for="card4" class="button return" aria-hidden="true">
+            <label for="card4" class="button return" aria-hidden="true"
+              ><span>Stäng</span>
               <i class="fas fa-arrow-left"></i>
             </label>
           </div>
@@ -539,7 +560,7 @@
           "
         >
           <div class="inner">
-            <h2>Ramadan</h2>
+            <h2>Day of Muharram</h2>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -558,11 +579,13 @@
               <div class="icon">
                 <i class="fas fa-users"></i>
               </div>
+              <span>18/8</span>
             </div>
             <div class="info">
               <div class="icon">
                 <i class="fas fa-door-open"></i>
               </div>
+              <span>2021</span>
             </div>
             <div class="info">
               <div class="icon">
@@ -589,9 +612,10 @@
                 <li>Lorem ipsum dolor sit amet.</li>
               </ul>
             </div>
-            <div class="location">Ramadan</div>
+            <div class="location">Day of Muharram</div>
             <div class="price">.</div>
-            <label for="card2" class="button return" aria-hidden="true">
+            <label for="card2" class="button return" aria-hidden="true"
+              ><span>Stäng</span>
               <i class="fas fa-arrow-left"></i>
             </label>
           </div>
@@ -608,7 +632,7 @@
           "
         >
           <div class="inner">
-            <h2>Lailat Al Bara'ah</h2>
+            <h2>Profetens Födelsedag</h2>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -627,11 +651,13 @@
               <div class="icon">
                 <i class="fas fa-users"></i>
               </div>
+              <span>19/10</span>
             </div>
             <div class="info">
               <div class="icon">
                 <i class="fas fa-door-open"></i>
               </div>
+              <span>2021</span>
             </div>
             <div class="info">
               <div class="icon">
@@ -656,9 +682,10 @@
                 repudiandae aspernatur explicabo numquam! Tenetur!
               </p>
             </div>
-            <div class="location">Lailat Al Bara'ah</div>
+            <div class="location">Profetens Födelsedag</div>
             <div class="price">.</div>
-            <label for="card3" class="button return" aria-hidden="true">
+            <label for="card3" class="button return" aria-hidden="true"
+              ><span>Stäng</span>
               <i class="fas fa-arrow-left"></i>
             </label>
           </div>

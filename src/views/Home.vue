@@ -85,6 +85,25 @@
       Tel 0491 87900
     </p>
 
+    <div id="TestGrid">
+      <div id="slideText"><h1>Ordförande</h1></div>
+      <div id="slideshow"></div>
+      <p style="margin-top: 0%">Abdou Elbany</p>
+    </div>
+    <div id="TestFlex">
+      <div>
+        <h1>Körsång med våra stjärnor</h1>
+        <div id="TB1"></div>
+      </div>
+      <div>
+        <h1 style="margin-bottom: 0">Föreningens Fotbollslag</h1>
+        <p style="margin: 0; font-size: 18px">
+          Med tränare Mustafa, sekriterare Abdelouahab Boussefres på
+          prisutdelningen
+        </p>
+        <div class="TB"></div>
+      </div>
+    </div>
     <div id="LowSection"></div>
   </div>
 </template>
@@ -109,6 +128,44 @@ export default {
 </script>
 
 <style scoped>
+#TB1 {
+  width: 33vw;
+  height: 33vh;
+  background-image: url("~@/assets/Körsång.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.TB {
+  width: 33vw;
+  height: 33vh;
+  background-image: url("~@/assets/Fotbollslag.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#TestFlex {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20vh;
+  gap: 10vw;
+  margin-left: 11vw;
+}
+#TestGrid {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20vh;
+}
+.slidText {
+}
+#slideshow {
+  width: 33vw;
+  height: 33vh;
+  background-image: url("~@/assets/testss.jpg");
+  background-repeat: no-repeat;
+}
 #img1 {
   background-image: url("~@/assets/Together2.png");
   width: 30vw;
