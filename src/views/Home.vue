@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template>
   <div id="hbg">
     <div class="Fin">
@@ -17,13 +18,13 @@
       <Enavbar class="Enav down" />
     </div>
     <div class="S">
-      <div class="BgOpac set">
+      <div class="BgOpac set" @click="scrollToElement">
         <div class="DownArrows bounce-1"></div>
       </div>
     </div>
     <div id="DesktopCards">
       <div id="txt1">
-        <h1>OM OSS</h1>
+        <h1 v-bind="scrollToMe">OM OSS</h1>
         <p>
           Oskarshamns mångkulturella föreningen jobbar med demokrati,
           integration, jämställdhet, kultur och fritid. Föreningens medlemmar
@@ -87,15 +88,26 @@
     <div id="LowSection"></div>
   </div>
 </template>
+<!-- eslint-disable -->
 <script>
 import Enavbar from "@/components/Enavbar.vue";
 export default {
   components: {
     Enavbar,
   },
-  methods: {},
+  methods: {
+    scrollToElement() {
+      const el = this.$refs.scrollToMe;
+
+      if (el) {
+        // Use el.scrollIntoView() to instantly scroll to the element
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+  },
 };
 </script>
+
 <style scoped>
 #img1 {
   background-image: url("~@/assets/Together2.png");
@@ -282,8 +294,9 @@ export default {
     text-align: left;
     font-weight: 600;
     margin-left: 5vw;
-    margin-top: -3vh;
+    margin-top: 5vh;
     display: block;
+    text-align: center;
   }
   #ltxtD {
     display: none;

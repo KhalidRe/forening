@@ -1,3 +1,4 @@
+<!--eslint-disable-->
 <template>
   <div>
     <div id="nav">
@@ -8,11 +9,13 @@
     </div>
   </div>
 </template>
+<!-- eslint-disable -->
 <script>
 export default {
   name: "Navbar",
 };
 </script>
+
 <style scoped>
 #nav {
   padding: 30px;
@@ -27,6 +30,7 @@ export default {
   border-radius: 5px;
   font-weight: 550;
   -webkit-transition: 1s;
+  text-decoration: none;
 }
 #nav a:hover {
   box-shadow: 0px 0px 10px 5px #ccc;

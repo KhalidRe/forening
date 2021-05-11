@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template>
   <div>
     <div>
@@ -12,15 +13,19 @@
     </div>
 
     <div id="HolidayC"><Holiday /></div>
+    <Flipcards />
   </div>
 </template>
+<!-- eslint-disable -->
 <script>
 import Enavbar from "@/components/Enavbar.vue";
 import Holiday from "../components/Holiday.vue";
+import Flipcards from "../components/Flipcards.vue";
 export default {
   components: {
     Enavbar,
     Holiday,
+    Flipcards,
   },
   methods: {},
 };
@@ -147,6 +152,16 @@ export default {
   #approval {
     font-size: 50px;
     margin-top: 120vh;
+  }
+  @media only screen and (max-device-width: 750px) {
+    #gText {
+      top: 15%;
+      left: 10%;
+    }
+    #Header {
+      left: 10%;
+      top: 20%;
+    }
   }
 }
 </style>

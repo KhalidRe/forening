@@ -1,8 +1,9 @@
+<!-- eslint-disable -->
 <template>
   <div id="Ptime">
     <div id="Cbg">
       <div id="container">
-        <div class="Ton" v-if="this.ok > this.eshaT && this.ok < this.fajirT">
+        <div class="Ton" v-if="this.ok < this.eshaT && this.ok < this.fajirT">
           <p>Fajr</p>
           <p>{{ this.salat.fajr }}</p>
         </div>
@@ -84,6 +85,7 @@
     </table>
   </div>
 </template>
+<!-- eslint-disable -->
 <script>
 import moment from "moment";
 export default {
@@ -141,7 +143,9 @@ export default {
           result.model.salahTimings[this.s].isha.replace(":", "")
         );
         this.salat = result.model.salahTimings[this.s];
+        console.log(this.fajirT);
       });
+    console.log(this.ok);
   },
   methods: {
     f() {},
@@ -165,14 +169,16 @@ td {
   font-size: 1em;
   color: white;
   font-weight: 600;
+  overflow: hidden;
 }
 tr:nth-child(even) {
   background: rgb(7, 199, 224);
+  overflow: hidden;
 }
 #HeadList {
   position: absolute;
   overflow: hidden;
-  width: 99vw;
+  width: 98.5vw;
   margin-top: -478px;
   -webkit-animation: fadein 1s;
 
@@ -181,12 +187,8 @@ tr:nth-child(even) {
 }
 .tr1 {
   background-color: #091c3f;
-  width: 10vw;
 }
 
-#Ptime {
-  position: relative;
-}
 .Ton {
   background: url("~@/assets/on.png");
   background-repeat: no-repeat;
@@ -226,6 +228,7 @@ tr:nth-child(even) {
 #Cbg {
   background: url("~@/assets/mosknbg.png");
   height: 1250px;
+  width: 98.5vw;
   background-position: center;
   background-position-y: -50px;
   background-size: 1900px;
@@ -306,7 +309,7 @@ tr:nth-child(even) {
     margin-top: -353px;
   }
   td {
-    font-size: 1vh;
+    font-size: 1em;
     color: white;
     font-weight: 600;
   }

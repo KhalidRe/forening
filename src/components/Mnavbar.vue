@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template>
   <div class="Mmenu" :class="{ 'Mmenu--hidden': !showNavbar }">
     <div id="cont">
@@ -11,6 +12,7 @@
     </div>
   </div>
 </template>
+<!-- eslint-disable -->
 
 <script>
 export default {

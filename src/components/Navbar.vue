@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template>
   <div>
     <div id="nav">
@@ -6,15 +7,16 @@
     </div>
   </div>
 </template>
+<!-- eslint-disable -->
 <script>
 export default {
   name: "Navbar",
 };
 </script>
+
 <style scoped>
 #nav {
   padding: 30px;
-  background: linear-gradient(#00000036, #b1b1b100);
 }
 #nav a {
   font-weight: bold;
@@ -37,9 +39,11 @@ export default {
   position: absolute;
   left: 40px;
   top: 100px;
+  text-decoration: none;
 }
 #kontakt {
   right: 3%;
   position: absolute;
+  text-decoration: none;
 }
 </style>

@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template>
   <div id="Holiday">
     <div id="grid">
@@ -24,9 +25,7 @@
         <div class="contText">
           <p class="text">april</p>
           <h4 class="text">Ramadan</h4>
-          <p class="text">
-            Läs Mer
-          </p>
+          <p class="text">Läs Mer</p>
         </div>
       </div>
       <div class="conts">
@@ -34,9 +33,7 @@
         <div class="contText">
           <p class="text">Maj</p>
           <h4 class="text">Laylat Al Qadr</h4>
-          <p class="text">
-            Läs Mer
-          </p>
+          <p class="text">Läs Mer</p>
         </div>
       </div>
       <div class="conts">
@@ -90,6 +87,7 @@
     </div>
   </div>
 </template>
+<!-- eslint-disable -->
 <script>
 export default {
   name: "Holiday",
@@ -99,7 +97,7 @@ export default {
 .text {
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 5px;
+  margin-left: 1vh;
 }
 .contText {
   color: white;
@@ -111,7 +109,7 @@ export default {
 .conts {
   display: flex;
   gap: 0vh;
-  width: 24vw;
+  width: 400px;
 }
 .DivC {
   display: flex;
@@ -132,22 +130,101 @@ export default {
 }
 #grid {
   display: grid;
-  grid-template-columns: 125px 125px;
+  grid-template-columns: 10vw 10vw;
   grid-row-gap: 0vh;
-  grid-column-gap: 70vh;
+  grid-column-gap: 30vw;
 
   justify-items: center;
   margin-top: 2vh;
   margin-right: 10vw;
+  align-items: center;
 }
 #Holiday {
   display: flex;
   justify-content: center;
-  width: 99vw;
+
   height: 70vh;
   color: black;
   margin-top: 100px;
 
   background-repeat: no-repeat;
+}
+@media only screen and (max-device-width: 750px) {
+  .conts {
+    width: 45vw;
+  }
+  .DivC {
+    width: 10vw;
+    height: 10vh;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: 30vw 0vw;
+    justify-items: center;
+    margin-top: 2vh;
+    align-items: center;
+    overflow: hidden;
+  }
+  .contText {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .Date {
+    font-size: 4vh;
+    font-weight: 600;
+    margin-top: 1vh;
+  }
+}
+@media only screen and (max-device-width: 927px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-row-gap: 0vh;
+    grid-column-gap: 0vw;
+
+    justify-items: center;
+    margin-top: 2vh;
+    margin-left: 15vw;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-device-width: 440px) {
+  .conts {
+    width: 50vw;
+  }
+  .DivC {
+    width: 10vw;
+    height: 10vh;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: 40vw 50vw;
+    grid-row-gap: 0vh;
+    grid-column-gap: 0vw;
+
+    justify-items: center;
+    margin-top: 2vh;
+    margin-left: 15vw;
+    align-items: center;
+    overflow: visible;
+  }
+  .contText {
+    font-weight: 500;
+    font-size: 4vw;
+  }
+  h4 {
+    font-size: 4vw;
+    font-weight: 600;
+  }
+  .Date {
+    font-size: 4vh;
+    font-weight: 600;
+    margin-top: 1vh;
+  }
 }
 </style>

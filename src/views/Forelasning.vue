@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template>
   <div>
     <div>
@@ -19,6 +20,7 @@
     <div id="LowSection"></div>
   </div>
 </template>
+<!-- eslint-disable -->
 <script>
 import Enavbar from "@/components/Enavbar.vue";
 export default {

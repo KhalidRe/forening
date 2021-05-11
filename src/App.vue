@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template id="yes">
   <div id="app">
     <Navbar id="DesktopNav" />
@@ -6,6 +7,7 @@
     <Mnavbar id="MobileNav" />
   </div>
 </template>
+<!-- eslint-disable -->
 <script>
 import Navbar from "@/components/Navbar.vue";
 import Mnavbar from "@/components/Mnavbar.vue";
@@ -17,10 +19,12 @@ export default {
   },
 };
 </script>
+<!-- eslint-disable -->
 <style>
 #MobileNav {
   display: none;
 }
+
 #app {
   font-family: Chronicle Display;
   -webkit-font-smoothing: antialiased;
@@ -85,6 +89,7 @@ body {
     overflow: hidden;
     position: fixed;
     bottom: 0;
+    left: 1%;
     width: 100%;
   }
 }

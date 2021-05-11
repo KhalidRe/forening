@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template>
   <div id="bgs">
     <div id="Bcollection">
@@ -17,6 +18,7 @@
     <div id="LowSection"></div>
   </div>
 </template>
+<!-- eslint-disable -->
 <script>
 import Enavbar from "@/components/Enavbar.vue";
 import Ptime from "@/components/Ptime.vue";
@@ -30,9 +32,9 @@ export default {
   },
 };
 </script>
+<!-- eslint-disable -->
 <style>
 #Ppos {
-  overflow: hidden;
   -webkit-animation: fadein 1s;
 
   animation: fadein 1s;
@@ -60,7 +62,7 @@ export default {
 }
 #gText {
   color: #ffc02c;
-  top: 20%;
+  top: 30%;
   left: 10%;
   position: absolute;
   font-size: 2em;
@@ -70,7 +72,7 @@ export default {
   font-size: 4em;
   position: absolute;
   left: 10%;
-  top: 25%;
+  top: 35%;
   text-align: left;
 }
 .Enav {
