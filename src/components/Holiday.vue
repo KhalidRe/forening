@@ -16,7 +16,7 @@
         <div class="DivC"><p class="Date">28</p></div>
         <div class="contText">
           <p class="text">Mars</p>
-          <h4 class="text">Lailat Al Bara'ah</h4>
+          <h4 class="text">Sahban</h4>
           <p class="text">Läs Mer</p>
         </div>
       </div>

@@ -32,7 +32,6 @@ export default {
 </script>
 <style scoped>
 #s1 {
-  display: none;
 }
 #HolidayC {
   margin-top: 30vh;

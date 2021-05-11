@@ -813,7 +813,7 @@ body {
 
 .back {
   transform: rotateY(180deg);
-  background-color: #fff;
+  background-color: rgb(219, 219, 219);
   border: 2px solid rgb(240, 240, 240);
   .inner {
     grid-template-rows: 1fr 2fr 1fr 2fr 14fr 1fr 1fr;

@@ -1,8 +1,12 @@
 <!-- eslint-disable -->
 <template id="yes">
   <div id="app">
+    <Social id="social" />
+    <Notification id="notification" />
     <Navbar id="DesktopNav" />
+
     <router-view />
+
     <img id="logga" src="./assets/Mark.png" alt="" />
     <Mnavbar id="MobileNav" />
   </div>
@@ -11,16 +15,30 @@
 <script>
 import Navbar from "@/components/Navbar.vue";
 import Mnavbar from "@/components/Mnavbar.vue";
+import Social from "@/components/Social.vue";
+import Notification from "@/components/Notification.vue";
 export default {
   name: "app",
   components: {
     Navbar,
     Mnavbar,
+    Social,
+    Notification,
   },
 };
 </script>
 <!-- eslint-disable -->
 <style>
+#notification {
+  position: absolute;
+  left: 20%;
+  top: 4%;
+}
+#social {
+  position: absolute;
+  left: 10%;
+  top: 4%;
+}
 #MobileNav {
   display: none;
 }
