@@ -31,12 +31,12 @@ export default {
 <style>
 #notification {
   position: absolute;
-  left: 20%;
+  left: 25%;
   top: 4%;
 }
 #social {
   position: absolute;
-  left: 10%;
+  left: 15%;
   top: 4%;
 }
 #MobileNav {
@@ -67,6 +67,11 @@ body {
   left: 2%;
   top: 0%;
 }
+@media only screen and (max-device-width: 1270px) {
+  #social {
+    left: 15%;
+  }
+}
 @media only screen and (min-device-width: 700px) {
   body {
     background-size: cover;
@@ -86,6 +91,7 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 9999;
   }
   #logga {
     position: absolute;
@@ -103,6 +109,14 @@ body {
     bottom: 0;
     left: 1%;
     width: 100%;
+  }
+  #notification {
+    left: 45%;
+    top: 2%;
+  }
+  #social {
+    left: 80%;
+    top: 2%;
   }
 }
 </style>

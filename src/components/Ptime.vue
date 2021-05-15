@@ -178,7 +178,7 @@ tr:nth-child(even) {
 #HeadList {
   position: absolute;
   overflow: hidden;
-  width: 98.5vw;
+  width: 97.5vw;
   margin-top: -478px;
   -webkit-animation: fadein 1s;
 
@@ -228,7 +228,6 @@ tr:nth-child(even) {
 #Cbg {
   background: url("~@/assets/mosknbg.png");
   height: 1250px;
-  width: 98.5vw;
   background-position: center;
   background-position-y: -50px;
   background-size: 1900px;
@@ -238,9 +237,6 @@ tr:nth-child(even) {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0%;
-  padding: 0%;
-  position: relative;
 }
 @keyframes fadein {
   0% {

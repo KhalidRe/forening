@@ -85,18 +85,21 @@
       Tel 0491 87900
     </p>
 
-    <Slides />
+    <Slides id="slides" />
+
     <div id="LowSection"></div>
   </div>
 </template>
 <!-- eslint-disable -->
 <script>
+import SlidesTwo from "@/components/SlidesTwo.vue";
 import Slides from "@/components/Slides.vue";
 import Enavbar from "@/components/Enavbar.vue";
 export default {
   components: {
     Enavbar,
     Slides,
+    SlidesTwo,
   },
   methods: {
     scrollToElement() {
@@ -112,6 +115,11 @@ export default {
 </script>
 
 <style scoped>
+#slides {
+  margin-top: 20vh;
+  overflow: hidden;
+}
+
 #TB1 {
   width: 33vw;
   height: 33vh;
@@ -285,7 +293,7 @@ export default {
 #LowSection {
   width: 2vw;
   height: 2vh;
-  margin-top: 100vh;
+  margin-top: 20vh;
   position: absolute;
 }
 #ltxt {
@@ -344,6 +352,9 @@ export default {
   }
   .BgOpac {
     margin-left: -29px;
+    border-radius: 40px;
+    top: 60%;
+    background-color: rgba(0, 0, 0, 0.267);
   }
   #Header {
     top: 25%;

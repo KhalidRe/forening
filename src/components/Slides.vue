@@ -1,371 +1,145 @@
 <!-- eslint-disable -->
 <template>
-  <div class="wrapper">
-    <div class="slideshows">
-      <div class="slideshow slideshow--hero">
-        <div class="slides">
-          <div class="slide slide1">
-            <div class="desc">
-              <h1>
-                Körsång <br />
-                Med våra stjärnor
-              </h1>
-            </div>
-          </div>
-          <div class="slide slide2">
-            <div class="desc">
-              <h1>Föreningens Fotbollslag</h1>
-              <p>
-                Med tränare Mustafa, sekriterare Abdelouahab Boussefres på
-                prisutdelningen
-              </p>
-            </div>
-          </div>
-          <div class="slide slide3">
-            <div class="desc">
-              <h1></h1>
-              <p></p>
-            </div>
-          </div>
+  <div id="slides">
+    <div class="card">
+      <div class="card_part card_part-one">
+        <div class="picdesc"><h1>Körsång med våra stjärnor</h1></div>
+      </div>
+
+      <!-- Photo 2 -->
+      <div class="card_part card_part-two">
+        <div class="picdesc">
+          <h1>Föreningens Fotbollslag</h1>
+          <p class="mobtext">
+            Med tränare Mustafa, sekriterare Abdelouahab Boussefres <br />
+            på prisutdelningen
+          </p>
         </div>
       </div>
-      <div class="slideshow slideshow--contrast slideshow--contrast--before">
-        <div class="slides">
-          <div class="slide slide1"></div>
-          <div class="slide slide2"></div>
-          <div class="slide slide3"></div>
+
+      <!-- Photo 3 -->
+      <div class="card_part card_part-three">
+        <div class="picdesc">
+          <h1>Ordförande: Abdou Elbany</h1>
+          <h2>Utbildningsansvarig: Khaled Hasoumi</h2>
         </div>
       </div>
-      <div class="slideshow slideshow--contrast slideshow--contrast--after">
-        <div class="slides">
-          <div class="slide slide1"></div>
-          <div class="slide slide2"></div>
-          <div class="slide slide3"></div>
-        </div>
+
+      <!-- Photo 4 -->
+      <div class="card_part card_part-four">
+        <div class="picdesc"><h1>Utbildning</h1></div>
       </div>
     </div>
   </div>
 </template>
 <!-- eslint-disable -->
 <script>
-export default {
-  name: "Slides",
-};
+export default {};
 </script>
-<style lang="scss" scoped>
-@media only screen and (max-device-width: 600px) {
-  .desc {
+<style scoped>
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.picdesc {
+  position: absolute;
+  top: 60%;
+  font-size: 0.8em;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.322);
+}
+@media only screen and (max-device-width: 548px) {
+  .picdesc {
     position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 15%;
-    background-color: rgba(0, 0, 0, 0.4);
+    top: 55%;
+    font-size: 0.8em;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0);
   }
 }
-
-.wrapper {
+.mobtext {
+  font-size: 18px;
+}
+.card {
   position: relative;
-  height: 100vh;
-  width: 99vw;
+
+  width: 700px;
+  height: 400px;
   overflow: hidden;
-  margin-left: -1vh;
+
+  border-radius: 5px;
 }
 
-.slideshow {
+/*Light blue cover above the slide show*/
+.card::after {
+  content: "";
   position: absolute;
+  left: 0;
   top: 0;
-  left: 50%;
+  z-index: 900;
+
+  display: block;
   width: 100%;
   height: 100%;
-  transform: translateX(-50%);
-
-  &--hero {
-    z-index: 3;
-    left: 0;
-    top: 50%;
-    // width: 100%;
-    height: 85%;
-    transform: translateY(-50%) skewY(-10deg);
-    transform-origin: center;
-    overflow: hidden;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
-
-    .slides {
-      position: absolute;
-      left: 0;
-      top: -10%;
-      width: 100vw;
-      height: 100vh;
-      animation: 11s slideshow-hero-mobile -3s infinite;
-    }
-
-    .slide1 {
-      background-image: url(~@/assets/Körsång.jpg);
-      animation: 20s slides-set-1 -0.1s infinite;
-    }
-    .slide2 {
-      background-image: url(~@/assets/Fotbollslag.jpg);
-      animation: 20s slides-set-2 -0.1s infinite;
-      background-size: contain;
-    }
-    .slide3 {
-      background-image: url(~@/assets/Ordförande.jpg);
-      animation: 20s slides-set-3 -0.1s infinite;
-      background-size: contain;
-    }
-
-    @media (min-width: 600px) {
-      left: 50%;
-      top: 0;
-      width: 67%;
-      height: 100%;
-      transform: translateX(-50%) skewX(-10deg);
-
-      .slides {
-        top: 0;
-        left: -25%;
-        height: 100%;
-        animation: 11s slideshow-hero -3s infinite;
-      }
-    }
-  }
-
-  &--contrast {
-    z-index: 1;
-    width: 100%;
-    height: 50%;
-    transform: none;
-
-    .slide {
-      // filter: blur(3px);
-    }
-
-    &--before {
-      left: 0;
-
-      .slides {
-        width: 100vw;
-      }
-    }
-
-    &--after {
-      z-index: 2;
-      left: auto;
-      right: 0;
-
-      .slides {
-        width: 100vw;
-        left: auto;
-        right: 0;
-      }
-    }
-
-    .slides {
-      animation: 14s slideshow-contrast -5s infinite;
-    }
-
-    .slide1 {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(200, 200, 75, 0.25) 0,
-          rgba(200, 75, 75, 0.5) 100%
-        ),
-        url(~@/assets/Körsång.jpg);
-      // background-image: url(../img/slideshow/hero-1.jpg);
-      animation: 20s slides-set-1 -0.2s infinite;
-    }
-    .slide2 {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(200, 200, 75, 0.25) 0,
-          rgba(200, 75, 75, 0.5) 100%
-        ),
-        url(~@/assets/Fotbollslag.jpg);
-      // background-image: url(../img/slideshow/hero-2.jpg);
-      animation: 20s slides-set-2 -0.2s infinite;
-    }
-    .slide3 {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(200, 200, 75, 0.25) 0,
-          rgba(200, 75, 75, 0.5) 100%
-        ),
-        url(~@/assets/Ordförande.jpg);
-      // background-image: url(../img/slideshow/hero-3.jpg);
-      animation: 20s slides-set-3 -0.2s infinite;
-    }
-
-    &--after {
-      top: auto;
-      bottom: 0;
-
-      .slides {
-        animation: 13s slideshow-contrast -13s infinite;
-      }
-      .slide {
-        background-position: right;
-      }
-      .slide1 {
-        animation: 20s slides-set-1 infinite;
-      }
-      .slide2 {
-        animation: 20s slides-set-2 infinite;
-      }
-      .slide3 {
-        animation: 20s slides-set-3 infinite;
-      }
-    }
-
-    @media (min-width: 600px) {
-      width: 50%;
-      height: 100%;
-
-      &--after {
-        top: 0;
-        bottom: auto;
-
-        .slides {
-          width: 50vw;
-        }
-      }
-    }
-  }
 }
 
-.slides,
-.slide {
+.card_part {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 7;
+
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
-  background-position: center;
-  background-size: cover;
+
+  transform: translateX(700px);
+  background-image: url(~@/assets/Körsång.jpg);
+
+  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
-@keyframes slideshow-hero-mobile {
-  0% {
-    transform: scale(1) skewY(10deg);
-  }
-  50% {
-    transform: scale(1.05) skewY(10deg);
-  }
-  100% {
-    transform: scale(1) skewY(10deg);
-  }
+.card_part.card_part-two {
+  z-index: 6;
+  background-image: url(~@/assets/Fotbollslag.jpg);
+  animation-delay: 7s;
 }
 
-@keyframes slideshow-hero {
-  0% {
-    transform: scale(1) skewX(10deg);
-  }
-  50% {
-    transform: scale(1.05) skewX(10deg);
-  }
-  100% {
-    transform: scale(1) skewX(10deg);
-  }
+.card_part.card_part-three {
+  z-index: 5;
+  background-image: url(~@/assets/Ordförande.jpg);
+  animation-delay: 14s;
 }
 
-@keyframes slideshow-contrast {
-  0% {
-    transform: scale(1.05);
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.05);
-  }
+.card_part.card_part-four {
+  z-index: 4;
+  background-image: url(~@/assets/Utbildning.jpg);
+  animation-delay: 21s;
 }
 
-@keyframes slides-set-1 {
-  0% {
-    opacity: 1;
-    // transform: translateY(0);
-    transform: scale(1);
+@keyframes opaqTransition {
+  3% {
+    transform: translateX(0);
   }
-  31% {
-    opacity: 1;
-    // transform: translateY(0);
-    transform: scale(1);
+  25% {
+    transform: translateX(0);
   }
-  34% {
-    opacity: 0;
-    // transform: translateY(100px);
-    transform: scale(1.05);
-  }
-  97% {
-    opacity: 0;
-    // transform: translateY(-100px);
-    transform: scale(1.05);
+  28% {
+    transform: translateX(-700px);
   }
   100% {
-    opacity: 1;
-    // transform: translateY(0);
-    transform: scale(1);
-  }
-}
-@keyframes slides-set-2 {
-  0% {
-    opacity: 0;
-    // transform: translateY(-100px);
-    transform: scale(1.05);
-  }
-  31% {
-    opacity: 0;
-    // transform: translateY(-100px);
-    transform: scale(1.05);
-  }
-  34% {
-    opacity: 1;
-    // transform: translateY(0);
-    transform: scale(1);
-  }
-  64% {
-    opacity: 1;
-    // transform: translateY(0);
-    transform: scale(1);
-  }
-  67% {
-    opacity: 0;
-    // transform: translateY(100px);
-    transform: scale(1.05);
-  }
-  100% {
-    opacity: 0;
-    // transform: translateY(100px);
-    transform: scale(1.05);
-  }
-}
-@keyframes slides-set-3 {
-  0% {
-    opacity: 0;
-    // transform: translateY(-100px);
-    transform: scale(1.05);
-  }
-  64% {
-    opacity: 0;
-    // transform: translateY(-100px);
-    transform: scale(1.05);
-  }
-  67% {
-    opacity: 1;
-    // transform: translateY(0);
-    transform: scale(1);
-  }
-  97% {
-    opacity: 1;
-    // transform: translateY(0);
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    // transform: translateY(100px);
-    transform: scale(1.05);
+    transform: translateX(-700px);
   }
 }
 </style>
