@@ -85,34 +85,18 @@
       Tel 0491 87900
     </p>
 
-    <div id="TestGrid">
-      <div id="slideText"><h1>Ordförande</h1></div>
-      <div id="slideshow"></div>
-      <p style="margin-top: 0%">Abdou Elbany</p>
-    </div>
-    <div id="TestFlex">
-      <div>
-        <h1>Körsång med våra stjärnor</h1>
-        <div id="TB1"></div>
-      </div>
-      <div>
-        <h1 style="margin-bottom: 0">Föreningens Fotbollslag</h1>
-        <p style="margin: 0; font-size: 18px">
-          Med tränare Mustafa, sekriterare Abdelouahab Boussefres på
-          prisutdelningen
-        </p>
-        <div class="TB"></div>
-      </div>
-    </div>
+    <Slides />
     <div id="LowSection"></div>
   </div>
 </template>
 <!-- eslint-disable -->
 <script>
+import Slides from "@/components/Slides.vue";
 import Enavbar from "@/components/Enavbar.vue";
 export default {
   components: {
     Enavbar,
+    Slides,
   },
   methods: {
     scrollToElement() {

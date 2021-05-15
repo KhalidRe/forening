@@ -51,20 +51,14 @@ export default {
   color: #ffffff;
 }
 body {
-  /*background-image: url("~@/assets/CloudY.jpg");*/
-  /*background: -webkit-linear-gradient(#0b1d2600 0%, #0b1d26 70%),
-    url("~@/assets/CloudY.jpg"),
-    -webkit-linear-gradient(#0b1d26 0%, #0b1d26 100%);
-  background-repeat: no-repeat, no-repeat, repeat;
-  background-position: right bottom, top;
-  background-position-y: 150vh, 0, 130vh;*/
   background: linear-gradient(to bottom, transparent 70%, #12303f 100%),
+    linear-gradient(40deg, rgba(42, 85, 31, 0), rgba(95, 30, 30, 0)),
     url("~@/assets/CloudY.jpg"),
     -webkit-linear-gradient(#12303f 0%, #12303f 100%);
   height: 100vmax;
-  background-repeat: no-repeat, no-repeat, repeat;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat;
   background-position: right bottom, top;
-  background-position-y: -20vh, -20vh, 0vh;
+  background-position-y: -20vh, -20vh, -20vh, 0vh;
   background-size: cover;
 }
 #logga {

@@ -7,7 +7,7 @@
         <div
           class="front"
           style="
-            background-image: url('https://images.unsplash.com/photo-1584186028062-637e3e77318d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80');
+            background-image: url('https://images.unsplash.com/photo-1552481298-c192093589ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
           "
         >
           <div class="inner">
@@ -46,14 +46,15 @@
             </div>
             <div class="description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                accusamus.
+                Isrā och Mirāj, arabiska إسراء ومعراج, är namnen på de två
+                sammanhängande resorna som profeten Muhammed enligt islamisk
+                tradition fick uppleva en natt omkring år 620, även kallad Den
+                nattliga resan. Denna färd omnnämns i Koranen 17:1.
               </p>
+              <p>Isra var den första resan som Muhammed företog.</p>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptates earum nostrum ipsam ullam, reiciendis nam
-                consectetur? Doloribus voluptate architecto possimus perferendis
-                tenetur nemo amet temporibus, enim soluta nam, debitis.
+                Miraj är den andra resan som går från Tempelberget upp till Gud
+                och tillbaka till jorden igen.
               </p>
             </div>
             <div class="location">Lailat Al Miraj</div>
@@ -116,14 +117,12 @@
             </div>
             <div class="description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                accusamus.
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptates earum nostrum ipsam ullam, reiciendis nam
-                consectetur? Doloribus voluptate architecto possimus perferendis
-                tenetur nemo amet temporibus, enim soluta nam, debitis.
+                Vid solnedgången den 15:e i månaden Sha’ban i den islamiska
+                kalendern, infaller Laylat al Bara’a (Förlåtelsens natt). Natten
+                är ett tillfälle att rannsaka sig själv och be om ursäkt för
+                tillkortakommanden, men också att förlåta andra. Vanligare är
+                att natten spenderas i lugn och ro i gudsåminnelse (dhikrullah)
+                och bön (du’a).
               </p>
             </div>
             <div class="location">Shaban</div>
@@ -142,7 +141,7 @@
         <div
           class="front"
           style="
-            background-image: url('https://images.unsplash.com/photo-1584186028062-637e3e77318d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80');
+            background-image: url('https://images.unsplash.com/photo-1561314945-0562f5b6d2c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80');
           "
         >
           <div class="inner">
@@ -185,14 +184,16 @@
             </div>
             <div class="description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                accusamus.
+                Fastemånaden ramadan börjar den dag man ser nymånen och den
+                slutar officiellt efter en månad, när nästa nymåne visar sig.
+                Ramadan var den månad Muhammed mötte ängeln Gabriel.
               </p>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptates earum nostrum ipsam ullam, reiciendis nam
-                consectetur? Doloribus voluptate architecto possimus perferendis
-                tenetur nemo amet temporibus, enim soluta nam, debitis.
+                Varje god handling belönas. Belöning ges baserat på hur
+                uppriktigt ens avsikt är. Fastan är den enda dyrkan som Allah
+                har sagt om att Han själv är dess belöning. Detta betyder att
+                man utvecklar en sådan nära relation med Allah att Allah själv
+                blir Hjälparen.
               </p>
             </div>
             <div class="location">Ramadan</div>
@@ -211,7 +212,7 @@
         <div
           class="front"
           style="
-            background-image: url('https://images.unsplash.com/photo-1584186028062-637e3e77318d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80');
+            background-image: url('https://images.unsplash.com/photo-1531804308561-b6438d25a810?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=652&q=80');
           "
         >
           <div class="inner">
@@ -254,14 +255,12 @@
             </div>
             <div class="description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                accusamus.
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptates earum nostrum ipsam ullam, reiciendis nam
-                consectetur? Doloribus voluptate architecto possimus perferendis
-                tenetur nemo amet temporibus, enim soluta nam, debitis.
+                Laylat Al-Qadr är den mest välsignade av alla nätter. En person
+                som missar den har sannerligen missat en hel del bra. Om en
+                troende person är ivrig att lyda sin Herre och vill öka sina
+                goda gärningar, ska han sträva efter att fånga denna natt och
+                spendera den i dyrkan och lydnad. Om det görs lätt för honom,
+                kommer alla hans tidigare synder att bli förlåtna.
               </p>
             </div>
             <div class="location">Laylat Al Qadr</div>
@@ -280,11 +279,11 @@
         <div
           class="front"
           style="
-            background-image: url('https://images.unsplash.com/photo-1584186028062-637e3e77318d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80');
+            background-image: url('https://images.unsplash.com/photo-1591017940761-68725ef7d016?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80');
           "
         >
           <div class="inner">
-            <h2>Eid Al Iftar</h2>
+            <h2>Eid Al Fitr</h2>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -323,14 +322,12 @@
             </div>
             <div class="description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                accusamus.
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptates earum nostrum ipsam ullam, reiciendis nam
-                consectetur? Doloribus voluptate architecto possimus perferendis
-                tenetur nemo amet temporibus, enim soluta nam, debitis.
+                Eid al-fitr eller 'id al-fitr (arabiska: عيد الفطر) är det
+                årliga fastebrytandets högtid som avslutar den muslimska
+                fastemånaden ramadan. Högtiden kallas ofta för eid, vilket
+                betyder "en återkommande lycka eller festglädje". Firandet pågår
+                i upp till tre till fyra dagar, av vilka den första dagen är
+                viktigast.
               </p>
             </div>
             <div class="location">Eid Al Iftar</div>
@@ -349,7 +346,7 @@
         <div
           class="front"
           style="
-            background-image: url('https://images.unsplash.com/photo-1584186028062-637e3e77318d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80');
+            background-image: url('https://images.unsplash.com/photo-1564769625905-50e93615e769?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
           "
         >
           <div class="inner">
@@ -392,14 +389,15 @@
             </div>
             <div class="description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                accusamus.
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptates earum nostrum ipsam ullam, reiciendis nam
-                consectetur? Doloribus voluptate architecto possimus perferendis
-                tenetur nemo amet temporibus, enim soluta nam, debitis.
+                Under Arafah-dagen, den 9:e Dhu’l-Ḥijjah, överflödar den
+                gudomliga nåden och barmhärtigheten och dagen betraktas av många
+                lärde som årets bästa dag. Profeten ṣallallāhu 'alayhi wa sallam
+                (peace and blessings of Allāh be upon him), må Gud välsigna
+                honom och ge honom frid, sade att under `Arafah-dagen räddar Gud
+                fler människor från elden än under någon annan dag. Det har
+                också berättats att var och en som har ett stoftkorns vikt av
+                tro i sitt hjärta blir förlåten av Gud på denna dag antingen han
+                står vid `Arafah eller ej.
               </p>
             </div>
             <div class="location">Waqf Al Arafa - Hajj</div>
@@ -418,7 +416,7 @@
         <div
           class="front"
           style="
-            background-image: url('https://images.unsplash.com/photo-1584186028062-637e3e77318d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80');
+            background-image: url('https://images.unsplash.com/photo-1577214407836-1f3a0604ecb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=676&q=80');
           "
         >
           <div class="inner">
@@ -461,14 +459,13 @@
             </div>
             <div class="description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                accusamus.
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptates earum nostrum ipsam ullam, reiciendis nam
-                consectetur? Doloribus voluptate architecto possimus perferendis
-                tenetur nemo amet temporibus, enim soluta nam, debitis.
+                Den tolfte månaden i den islamiska kalendern kallas dhul hijjah.
+                Det är den månad i vilken islams femte grundpelare – vallfärden
+                – genomförs. Under denna månad infaller likaså en av islams två
+                högtider, eid al-adhā. Dessa båda tillfällen, vallfärden och eid
+                al-adha, är oupplösligt förbundna med profeten ʾIbrāhīm (över
+                honom vare Guds frid), känd i judiska och kristna traditioner
+                som Abraham.
               </p>
             </div>
             <div class="location">Eid Al Adha</div>
@@ -487,7 +484,7 @@
         <div
           class="front"
           style="
-            background-image: url('https://images.unsplash.com/photo-1584186028062-637e3e77318d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80');
+            background-image: url('https://images.unsplash.com/photo-1576506637731-8658b2af90eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80');
           "
         >
           <div class="inner">
@@ -530,14 +527,13 @@
             </div>
             <div class="description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                accusamus.
+                Islamisk tideräkning börjar den 15 juli 622 enligt den svenska
+                tideräkningen, den dag Mohammed utvandrade från staden Mecka
+                till staden Medina (profetens stad).
               </p>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptates earum nostrum ipsam ullam, reiciendis nam
-                consectetur? Doloribus voluptate architecto possimus perferendis
-                tenetur nemo amet temporibus, enim soluta nam, debitis.
+                islamiska nyårsdagen, Al Hidjra, infaller den första dagen i
+                månaden Muharram. Muharram betyder resa och utvandring.
               </p>
             </div>
             <div class="location">Hijra - Islamisk Nyår</div>
@@ -556,7 +552,7 @@
         <div
           class="front"
           style="
-            background-image: url('https://images.unsplash.com/photo-1561314945-0562f5b6d2c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80');
+            background-image: url('https://images.unsplash.com/photo-1582125701129-8ada9192f824?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=966&q=80');
           "
         >
           <div class="inner">
@@ -599,18 +595,11 @@
             </div>
             <div class="description">
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptatem unde ea voluptas fuga odio vel veniam eveniet,
-                explicabo autem earum?
+                Muharram (arabiska: المحرّم, lit. förbjuden) är den första
+                månaden i den muslimska kalendern. Det är en av årets fyra
+                heliga månader, och anses vara den heligaste månaden efter
+                fastemånaden ramadan.
               </p>
-              <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-              </ul>
             </div>
             <div class="location">Day of Muharram</div>
             <div class="price">.</div>
@@ -671,15 +660,9 @@
             </div>
             <div class="description">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
-                libero totam nostrum consequatur autem quae provident quos alias
-                fugit maxime nisi labore, temporibus tempore illo natus
-                voluptates aliquam ipsum officia quasi placeat aut facilis
-                laudantium nam!
-              </p>
-              <p>
-                Quam, iusto.Neque ratione ut deserunt unde dicta nesciunt,
-                repudiandae aspernatur explicabo numquam! Tenetur!
+                Denna högtid kallas "Mavalid al-Nabi" som betyder "profetens
+                födelsedag". Han föddes i Mekka den 12:e dagen i månaden Rebi I,
+                (den 20 augusti år 570 e.Kr.).
               </p>
             </div>
             <div class="location">Profetens Födelsedag</div>
@@ -864,13 +847,16 @@ body {
   .description {
     grid-row: 5;
     grid-column: 1/-1;
-    font-size: 0.86em;
+    font-size: 1.4em;
     border-radius: 5px;
     font-weight: 600;
     line-height: 1.4em;
     overflow: auto;
     color: $accent-color;
     padding-right: 10px;
+  }
+  .description > p {
+    color: rgb(1, 19, 83);
   }
 
   .location,
