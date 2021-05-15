@@ -8,7 +8,7 @@
         </div>
         <div class="contText">
           <p class="text">Mars</p>
-          <h4 class="text">Lailat Al Miraj</h4>
+          <h3 class="text">Lailat Al Miraj</h3>
           <p class="text">Läs Mer</p>
         </div>
       </div>
@@ -16,7 +16,7 @@
         <div class="DivC"><p class="Date">28</p></div>
         <div class="contText">
           <p class="text">Mars</p>
-          <h4 class="text">Sahban</h4>
+          <h3 class="text">Sahban</h3>
           <p class="text">Läs Mer</p>
         </div>
       </div>
@@ -24,7 +24,7 @@
         <div class="DivC"><p class="Date">12</p></div>
         <div class="contText">
           <p class="text">april</p>
-          <h4 class="text">Ramadan</h4>
+          <h3 class="text">Ramadan</h3>
           <p class="text">Läs Mer</p>
         </div>
       </div>
@@ -32,7 +32,7 @@
         <div class="DivC"><p class="Date">9</p></div>
         <div class="contText">
           <p class="text">Maj</p>
-          <h4 class="text">Laylat Al Qadr</h4>
+          <h3 class="text">Laylat Al Qadr</h3>
           <p class="text">Läs Mer</p>
         </div>
       </div>
@@ -40,7 +40,7 @@
         <div class="DivC"><p class="Date">13</p></div>
         <div class="contText">
           <p class="text">Maj</p>
-          <h4 class="text">Eid Al Iftar</h4>
+          <h3 class="text">Eid Al Iftar</h3>
           <p class="text">Läs Mer</p>
         </div>
       </div>
@@ -48,7 +48,7 @@
         <div class="DivC"><p class="Date">19</p></div>
         <div class="contText">
           <p class="text">July</p>
-          <h4 class="text">Waqf Al Arafa - Hajj</h4>
+          <h3 class="text">Waqf Al Arafa - Hajj</h3>
           <p class="text">Läs Mer</p>
         </div>
       </div>
@@ -56,7 +56,7 @@
         <div class="DivC"><p class="Date">22</p></div>
         <div class="contText">
           <p class="text">July</p>
-          <h4 class="text">Eid Al Adha</h4>
+          <h3 class="text">Eid Al Adha</h3>
           <p class="text">Läs Mer</p>
         </div>
       </div>
@@ -64,7 +64,7 @@
         <div class="DivC"><p class="Date">9</p></div>
         <div class="contText">
           <p class="text">Augusti</p>
-          <h4 class="text">Hijra - Islamisk Nyår</h4>
+          <h3 class="text">Hijra - Islamisk Nyår</h3>
           <p class="text">Läs Mer</p>
         </div>
       </div>
@@ -72,7 +72,7 @@
         <div class="DivC"><p class="Date">18</p></div>
         <div class="contText">
           <p class="text">Augusti</p>
-          <h4 class="text">Day of Ashura / Muharram</h4>
+          <h3 class="text">Day of Ashura / Muharram</h3>
           <p class="text">Läs Mer</p>
         </div>
       </div>
@@ -80,7 +80,7 @@
         <div class="DivC"><p class="Date">19</p></div>
         <div class="contText">
           <p class="text">October</p>
-          <h4 class="text">Profetens Födelsedag</h4>
+          <h3 class="text">Profetens Födelsedag</h3>
           <p class="text">Läs Mer</p>
         </div>
       </div>

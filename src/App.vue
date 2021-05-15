@@ -33,11 +33,13 @@ export default {
   position: absolute;
   left: 25%;
   top: 4%;
+  z-index: 999;
 }
 #social {
   position: absolute;
   left: 15%;
   top: 4%;
+  z-index: 999;
 }
 #MobileNav {
   display: none;

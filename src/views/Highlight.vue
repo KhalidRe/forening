@@ -36,6 +36,8 @@ export default {
 #HolidayC {
   margin-top: 30vh;
   background-image: linear-gradient(to right, #5492b1 20%, #035179 100%);
+
+  margin-left: -2vw;
 }
 #approval {
   font-size: 50px;

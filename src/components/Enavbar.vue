@@ -3,7 +3,7 @@
   <div>
     <div id="nav">
       <router-link id="start" to="/forelasning">Föreläsningar</router-link>
-      <router-link id="Evenemang" to="/event">Evenemang</router-link>
+      <router-link id="Evenemang" to="/event">Händelser</router-link>
       <router-link id="Highlights" to="/highlight">Högtider</router-link>
       <router-link id="Btider" to="/salat">Bönetider</router-link>
     </div>

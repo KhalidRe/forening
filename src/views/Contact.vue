@@ -24,6 +24,7 @@
     <div id="Styrelse">
       <h2 id="StH">OMKF består av Styrelse Ordförande:</h2>
       <br />
+      <br />
       <p id="StP">
         <br />
         <strong> Styrelse Ordförande:</strong> Abdou Elbany <br />

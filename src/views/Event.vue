@@ -6,7 +6,7 @@
     </div>
 
     <h1 id="Header">
-      <b>Evenemang </b>
+      <b>Händelser</b>
     </h1>
     <div id="Bcollection">
       <Enavbar class="Enav up" />

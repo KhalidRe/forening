@@ -170,6 +170,7 @@ td {
   color: white;
   font-weight: 600;
   overflow: hidden;
+  width: 100vw;
 }
 tr:nth-child(even) {
   background: rgb(7, 199, 224);
@@ -178,10 +179,10 @@ tr:nth-child(even) {
 #HeadList {
   position: absolute;
   overflow: hidden;
-  width: 97.5vw;
+  width: 100%;
   margin-top: -478px;
   -webkit-animation: fadein 1s;
-
+  left: 0%;
   animation: fadein 1s;
   background-color: #17aec8;
 }
@@ -190,7 +191,7 @@ tr:nth-child(even) {
 }
 
 .Ton {
-  background: url("~@/assets/on.png");
+  background: url("~@/assets/On.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 170px;
