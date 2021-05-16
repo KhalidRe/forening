@@ -9,15 +9,15 @@
         <div class="contText">
           <p class="text">Mars</p>
           <h3 class="text">Lailat Al Miraj</h3>
-          <p class="text">Läs Mer</p>
+          <p class="text" href="#bottom" v-smooth-scroll>Läs Mer</p>
         </div>
       </div>
       <div class="conts">
         <div class="DivC"><p class="Date">28</p></div>
         <div class="contText">
           <p class="text">Mars</p>
-          <h3 class="text">Sahban</h3>
-          <p class="text">Läs Mer</p>
+          <h3 class="text">Shaban</h3>
+          <p class="text" href="#bottom" v-smooth-scroll>Läs Mer</p>
         </div>
       </div>
       <div class="conts">
@@ -25,7 +25,7 @@
         <div class="contText">
           <p class="text">april</p>
           <h3 class="text">Ramadan</h3>
-          <p class="text">Läs Mer</p>
+          <p class="text" href="#bottom" v-smooth-scroll>Läs Mer</p>
         </div>
       </div>
       <div class="conts">
@@ -33,7 +33,7 @@
         <div class="contText">
           <p class="text">Maj</p>
           <h3 class="text">Laylat Al Qadr</h3>
-          <p class="text">Läs Mer</p>
+          <p class="text" href="#bottom" v-smooth-scroll>Läs Mer</p>
         </div>
       </div>
       <div class="conts">
@@ -41,7 +41,7 @@
         <div class="contText">
           <p class="text">Maj</p>
           <h3 class="text">Eid Al Iftar</h3>
-          <p class="text">Läs Mer</p>
+          <p class="text" href="#bottom" v-smooth-scroll>Läs Mer</p>
         </div>
       </div>
       <div class="conts">
@@ -49,7 +49,7 @@
         <div class="contText">
           <p class="text">July</p>
           <h3 class="text">Waqf Al Arafa - Hajj</h3>
-          <p class="text">Läs Mer</p>
+          <p class="text" href="#bottom" v-smooth-scroll>Läs Mer</p>
         </div>
       </div>
       <div class="conts">
@@ -57,7 +57,7 @@
         <div class="contText">
           <p class="text">July</p>
           <h3 class="text">Eid Al Adha</h3>
-          <p class="text">Läs Mer</p>
+          <p class="text" href="#bottom" v-smooth-scroll>Läs Mer</p>
         </div>
       </div>
       <div class="conts">
@@ -65,7 +65,7 @@
         <div class="contText">
           <p class="text">Augusti</p>
           <h3 class="text">Hijra - Islamisk Nyår</h3>
-          <p class="text">Läs Mer</p>
+          <p class="text" href="#bottom" v-smooth-scroll>Läs Mer</p>
         </div>
       </div>
       <div class="conts">
@@ -73,7 +73,7 @@
         <div class="contText">
           <p class="text">Augusti</p>
           <h3 class="text">Day of Ashura / Muharram</h3>
-          <p class="text">Läs Mer</p>
+          <p class="text" href="#bottom" v-smooth-scroll>Läs Mer</p>
         </div>
       </div>
       <div class="conts">
@@ -81,16 +81,18 @@
         <div class="contText">
           <p class="text">October</p>
           <h3 class="text">Profetens Födelsedag</h3>
-          <p class="text">Läs Mer</p>
+          <p id="bottom" class="text" href="#bottom" v-smooth-scroll>Läs Mer</p>
         </div>
       </div>
     </div>
   </div>
 </template>
 <!-- eslint-disable -->
+
 <script>
 export default {
   name: "Holiday",
+  methods: {},
 };
 </script>
 <style scoped>

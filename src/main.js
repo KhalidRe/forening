@@ -4,7 +4,8 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import moment from "moment";
-
+import VueSmoothScroll from "vue2-smooth-scroll";
+Vue.use(VueSmoothScroll);
 Vue.use(moment);
 
 new Vue({

@@ -17,14 +17,14 @@
     <div id="Bcollection">
       <Enavbar class="Enav down" />
     </div>
-    <div class="S">
-      <div class="BgOpac set" @click="scrollToElement">
-        <div class="DownArrows bounce-1"></div>
+    <div class="S" href="#bottom" v-smooth-scroll>
+      <div class="BgOpac set" href="#bottom" v-smooth-scroll>
+        <div class="DownArrows bounce-1" href="#bottom" v-smooth-scroll></div>
       </div>
     </div>
     <div id="DesktopCards">
       <div id="txt1">
-        <h1 v-bind="scrollToMe">OM OSS</h1>
+        <h1 id="bottom">OM OSS</h1>
         <p>
           Oskarshamns mångkulturella föreningen jobbar med demokrati,
           integration, jämställdhet, kultur och fritid. Föreningens medlemmar
@@ -102,13 +102,13 @@ export default {
     SlidesTwo,
   },
   methods: {
-    scrollToElement() {
-      const el = this.$refs.scrollToMe;
+    methods: {
+      goto(refName) {
+        var element = this.$refs[refName];
+        var top = element.offsetTop;
 
-      if (el) {
-        // Use el.scrollIntoView() to instantly scroll to the element
-        el.scrollIntoView({ behavior: "smooth" });
-      }
+        window.scrollTo(0, top);
+      },
     },
   },
 };
@@ -198,6 +198,7 @@ export default {
 }
 .S .BgOpac {
   -webkit-transition: 1s;
+  z-index: 999;
 }
 .S div.BgOpac:hover {
   box-shadow: 0px 0px 50px 1px rgb(90, 142, 255);

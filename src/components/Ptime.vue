@@ -4,19 +4,30 @@
     <div id="Cbg">
       <div id="container">
         <div class="Ton" v-if="this.ok < this.eshaT && this.ok < this.fajirT">
-          <p>Fajr</p>
+          <p>Fajir</p>
           <p>{{ this.salat.fajr }}</p>
         </div>
         <div class="Toff" v-else>
-          <p>Fajr</p>
+          <p>Fajir</p>
           <p>{{ this.salat.fajr }}</p>
         </div>
-        <div class="Ton" v-if="this.ok > this.fajirT && this.ok < this.duhrT">
-          <p>Zuhr</p>
+        <div
+          class="Ton"
+          v-if="this.ok > this.fajirT && this.ok < this.shouruqT"
+        >
+          <p>Shorouq</p>
+          <p>{{ this.salat.shouruq }}</p>
+        </div>
+        <div class="Toff" v-else>
+          <p>Shorouq</p>
+          <p>{{ this.salat.shouruq }}</p>
+        </div>
+        <div class="Ton" v-if="this.ok > this.shouruqT && this.ok < this.duhrT">
+          <p>Dhuhr</p>
           <p>{{ this.salat.zuhr }}</p>
         </div>
         <div class="Toff" v-else>
-          <p>Zuhr</p>
+          <p>Dhuhr</p>
           <p>{{ this.salat.zuhr }}</p>
         </div>
         <div class="Ton" v-if="this.ok > this.duhrT && this.ok < this.aserT">
@@ -49,9 +60,9 @@
       <tr class="tr1">
         <th>Månad</th>
         <th>Dag</th>
-        <th>Fajr</th>
+        <th>Fajir</th>
         <th>Shorouq</th>
-        <th>Zuhr</th>
+        <th>Dhuhr</th>
         <th>Asr</th>
         <th>Maghreb</th>
         <th>Isha</th>
@@ -103,6 +114,7 @@ export default {
       ok: parseInt(moment().format("HHmm ")),
       i: 0,
       fajirT: null,
+      shouruqT: null,
       duhrT: null,
       aserT: null,
       maghrebT: null,
@@ -130,6 +142,7 @@ export default {
         this.fajirT = parseInt(
           result.model.salahTimings[this.s].fajr.replace(":", "")
         );
+
         this.duhrT = parseInt(
           result.model.salahTimings[this.s].zuhr.replace(":", "")
         );
@@ -145,6 +158,9 @@ export default {
         this.salat = result.model.salahTimings[this.s];
         console.log(this.fajirT);
       });
+    this.shorouqT = parseInt(
+      result.model.salahTimings[this.s].shouruq.replace(":", "")
+    );
     console.log(this.ok);
   },
   methods: {
@@ -221,7 +237,7 @@ tr:nth-child(even) {
 
 #container {
   display: grid;
-  grid-template-columns: 125px 125px 125px 125px 125px;
+  grid-template-columns: 125px 125px 125px 125px 125px 125px;
   grid-column-gap: 50px;
   border-radius: 50px;
   justify-items: center;
@@ -248,6 +264,20 @@ tr:nth-child(even) {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-device-width: 381px) {
+  #HeadList {
+    font-size: 4vw;
+  }
+  .Ton {
+    width: 50vw;
+    height: 5vh;
+  }
+  .Toff {
+    width: 50vw;
+    height: 5vh;
   }
 }
 @media only screen and (max-device-width: 873px) {

@@ -16,7 +16,7 @@
         <div class="DownArrows bounce-1"></div>
       </div>
     </div>
-    <div id="approval">INVÄNTAR GODKÄNNANDE</div>
+    
     <div id="LowSection"></div>
   </div>
 </template>

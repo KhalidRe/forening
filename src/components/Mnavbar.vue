@@ -68,6 +68,7 @@ export default {
   position: fixed;
   transform: translate3d(0, 0, 0);
   transition: 0.1s all ease-out;
+  margin-left: -1vw;
 }
 .Mmenu.Mmenu--hidden {
   box-shadow: none;
@@ -89,7 +90,7 @@ export default {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5vw;
+  gap: 4vw;
   height: 50px;
 }
 #S {
@@ -169,7 +170,7 @@ export default {
     width: 100vw;
   }
   #flexing {
-    gap: 20px;
+    gap: 4vw;
   }
 }
 </style>
